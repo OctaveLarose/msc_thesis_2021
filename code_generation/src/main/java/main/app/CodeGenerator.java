@@ -3,22 +3,12 @@ import com.squareup.javapoet.*;
 import javax.lang.model.element.Modifier;
 
 public class CodeGenerator {
-    public static void main(String[] args) throws java.io.IOException {
-        MethodSpec main = MethodSpec.methodBuilder("main")
-                .addModifiers(Modifier.PUBLIC, Modifier.STATIC)
-                .returns(void.class)
-                .addParameter(String[].class, "args")
-                .addStatement("$T.out.println($S)", System.class, "Hello, JavaPoet!")
-                .build();
+    public static void main(String[] args) {
+        ClassBuilder classBuilder = new ClassBuilder("testClass", 20);
+        TypeSpec testClass = classBuilder.build();
 
-        TypeSpec helloWorld = TypeSpec.classBuilder("HelloWorld")
-                .addModifiers(Modifier.PUBLIC, Modifier.FINAL)
-                .addMethod(main)
-                .build();
-
-        JavaFile javaFile = JavaFile.builder("com.example.helloworld", helloWorld)
-                .build();
-
-        javaFile.writeTo(System.out);
+        ClassExporter classExporter = new ClassExporter("com.test.testClass", testClass);
+        classExporter.exportToStdout();
+        classExporter.exportToFile();
     }
 }
