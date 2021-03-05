@@ -42,38 +42,56 @@ def get_classes_per_project_plot(df):
     # plt.xlim(-1, 30)
     plt.margins(x=0)
     plt.tight_layout()
-    # plt.show()
-    plt.savefig("classes_per_project.png")
+    plt.show()
+    # plt.savefig("classes_per_project.png")
 
 
 def get_methods_per_class_plot(df):
     # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
 
     METHOD_GRAPH_CAP = 30
-    print(f"Classes with nbr methods <= {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] <= METHOD_GRAPH_CAP])}")
-    print(f"Classes with nbr methods > {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] > METHOD_GRAPH_CAP])}")
+    # print(f"Classes with nbr methods <= {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] <= METHOD_GRAPH_CAP])}")
+    # print(f"Classes with nbr methods > {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] > METHOD_GRAPH_CAP])}")
 
-    df = df.loc[df["totalMethodsQty"] <= METHOD_GRAPH_CAP]
-
-    # max_class = df[df["totalMethodsQty"] == df["totalMethodsQty"].max()]
-
-    sns.set_theme(style="darkgrid")
-    bins = np.arange(-0.5, METHOD_GRAPH_CAP + 1, 1)
-    plot = sns.displot(data=df, x="totalMethodsQty", bins=bins)
-    plot.set(xlabel='Number of methods', ylabel='Number of classes')
+    # plot = sns.displot(data=sub_df, x="totalMethodsQty", bins=bins)
+    # plot.set(xlabel='Number of methods', ylabel='Number of classes')
     # plt.xlim(-1, 30)
-    plt.margins(x=0)
-    plt.tight_layout()
-    # plt.show()
-    plt.savefig("methods_per_class.png")
+    # plt.tight_layout()
+    #
+    # plot = sns.displot(data=df, x="totalMethodsQty")
+    # plot.set(xlabel='Number of methods', ylabel='Number of classes')
+    fig, (ax1, ax2) = plt.subplots(1, 2, gridspec_kw={"hspace": 5})
+
+    # plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
+
+    # sub_df = df.loc[df["totalMethodsQty"] <= METHOD_GRAPH_CAP]
+    # Config for both axes
+    ax1.set_ylabel('Number of classes')
+    for ax in [ax1, ax2]:
+        ax.set_xlabel('Number of methods')
+        ax.margins(x=0)
+
+    # Ax 1 config
+    bins = np.arange(-0.5, METHOD_GRAPH_CAP + 1, 1)
+    ax1.hist(df["totalMethodsQty"], bins=bins)
+    ax1.set_xlim(right=METHOD_GRAPH_CAP)
+
+    # Ax 2 config
+    max_len = df["totalMethodsQty"].max()
+    bins = np.arange(METHOD_GRAPH_CAP, max_len + 1, 10)
+    ax2.hist(df["totalMethodsQty"], bins=bins)
+    ax2.set_xlim([0, max_len])
+    ax2.set_ylim(top=100)
+    plt.show()
+    # plt.savefig("methods_per_class.png")
 
 
 def main():
     # generate_mega_class_csv()
 
     df = pd.read_csv("mega_class.csv")
-    # get_methods_per_class_plot(df)
-    get_classes_per_project_plot(df)
+    get_methods_per_class_plot(df)
+    # get_classes_per_project_plot(df)
 
 
 if __name__ == "__main__":
