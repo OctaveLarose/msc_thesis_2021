@@ -33,17 +33,41 @@ def get_classes_per_project_plot(df):
         classes_df.at[idx, "classesNbr"] = len(df[df["project_name"] == project_name])
 
     CLASS_PER_PROJECT_CAP = 3000
-    classes_df = classes_df.loc[classes_df["classesNbr"] <= CLASS_PER_PROJECT_CAP]
 
-    sns.set_theme(style="darkgrid")
-    # bins = np.arange(-0.5, METHOD_GRAPH_CAP + 1, 1)
-    plot = sns.displot(data=classes_df, x="classesNbr")
-    plot.set(xlabel='Number of classes', ylabel='Number of projects')
-    # plt.xlim(-1, 30)
-    plt.margins(x=0)
-    plt.tight_layout()
-    plt.show()
+    ### Seaborn version, has a nice theme
+    # classes_df = classes_df.loc[classes_df["classesNbr"] <= CLASS_PER_PROJECT_CAP]
+    # sns.set_theme(style="darkgrid")
+    # plot = sns.displot(data=classes_df, x="classesNbr")
+    # plot.set(xlabel='Number of classes', ylabel='Number of projects')
+    # plt.margins(x=0)
+    # plt.tight_layout()
+    # plt.show()
     # plt.savefig("classes_per_project.png")
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, gridspec_kw={"hspace": 5})
+
+    # plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
+
+    # sub_df = df.loc[df["totalMethodsQty"] <= METHOD_GRAPH_CAP]
+    # Config for both axes
+    ax1.set_ylabel('Number of projects')
+    for ax in [ax1, ax2]:
+        ax.set_xlabel('Number of classes')
+        ax.margins(x=0)
+
+    # Ax 1 config
+    bins = np.arange(-0.5, CLASS_PER_PROJECT_CAP + 1, 100)
+    ax1.hist(classes_df["classesNbr"], bins=bins)
+    ax1.set_xlim(right=CLASS_PER_PROJECT_CAP)
+
+    # Ax 2 config
+    max_len = classes_df["classesNbr"].max()
+    bins = np.arange(0, max_len + 1, 100)
+    ax2.hist(classes_df["classesNbr"], bins=bins)
+    ax2.set_yscale('log')
+    ax2.set_xlim([0, max_len])
+    # ax2.set_ylim(top=100)
+    plt.show()
 
 
 def get_methods_per_class_plot(df):
@@ -91,8 +115,8 @@ def main():
     # generate_mega_class_csv()
 
     df = pd.read_csv("mega_class.csv")
-    get_methods_per_class_plot(df)
-    # get_classes_per_project_plot(df)
+    # get_methods_per_class_plot(df)
+    get_classes_per_project_plot(df)
 
 
 if __name__ == "__main__":
