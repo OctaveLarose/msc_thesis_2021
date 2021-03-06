@@ -78,10 +78,11 @@ def get_methods_per_class_plot(df):
 
     # Ax 2 config
     max_len = df["totalMethodsQty"].max()
-    bins = np.arange(METHOD_GRAPH_CAP, max_len + 1, 10)
+    bins = np.arange(0, max_len + 1, 20)
     ax2.hist(df["totalMethodsQty"], bins=bins)
+    ax2.set_yscale('log')
     ax2.set_xlim([0, max_len])
-    ax2.set_ylim(top=100)
+    # ax2.set_ylim(top=100)
     plt.show()
     # plt.savefig("methods_per_class.png")
 
