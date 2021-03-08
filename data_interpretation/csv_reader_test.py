@@ -1,8 +1,8 @@
 import os
 import pandas as pd
 
-import data_interpretation.graph_generators.classes_per_project as classes_per_project
-import data_interpretation.graph_generators.methods_per_class as methods_per_class
+from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
+from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
 
 
 def generate_mega_class_csv():
@@ -13,7 +13,7 @@ def generate_mega_class_csv():
     for idx, csv_name in enumerate(csv_filenames):
         csv_path = os.path.join(class_csv_path, csv_name)
         new_df = pd.read_csv(csv_path)
-        new_df["project_name"] = csv_name[6:-4] # Removing "class_" and ".csv"
+        new_df["project_name"] = csv_name[6:-4]  # Removing "class_" and ".csv"
         if df is not None:
             df = pd.concat((df, new_df))
         else:
@@ -25,10 +25,15 @@ def generate_mega_class_csv():
 
 def main():
     # generate_mega_class_csv()
-
     df = pd.read_csv("mega_class.csv")
-    methods_per_class.generate_graph(df)
-    # classes_per_project.generate_graph()
+
+    graph_cls = MethodsPerClassGraphGen()
+    # graph_cls = ClassesPerProjectGraphGen()
+
+    graph_cls.generate_graph(df)
+
+    graph_cls.show()
+    # graph_cls.export()
 
 
 if __name__ == "__main__":
