@@ -11,7 +11,7 @@ class MethodsPerClassGraphGen(GraphGenerator):
     def generate_graph(self, df):
         # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
 
-        METHOD_GRAPH_CAP = 30
+        METHOD_GRAPH_CAP = 40
         # print(f"Classes with nbr methods <= {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] <= METHOD_GRAPH_CAP])}")
         # print(f"Classes with nbr methods > {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] > METHOD_GRAPH_CAP])}")
 
@@ -26,7 +26,9 @@ class MethodsPerClassGraphGen(GraphGenerator):
 
         # plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
 
-        # sub_df = df.loc[df["totalMethodsQty"] <= METHOD_GRAPH_CAP]
+        # IMPORTANT NOTE: not taking anonymous/inner classes for now.
+        df = df.loc[df["type"] == "class"]
+
         # Config for both axes
         ax1.set_ylabel('Number of classes')
         for ax in [ax1, ax2]:

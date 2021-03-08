@@ -2,6 +2,7 @@ import os
 import pandas as pd
 
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
+from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
 from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
 
 
@@ -27,7 +28,8 @@ def main():
     # generate_mega_class_csv()
     df = pd.read_csv("mega_class.csv")
 
-    graph_cls = MethodsPerClassGraphGen()
+    # graph_cls = MethodsPerClassGraphGen()
+    graph_cls = FieldsPerClassGraphGen()
     # graph_cls = ClassesPerProjectGraphGen()
 
     graph_cls.generate_graph(df)
