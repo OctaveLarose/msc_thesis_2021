@@ -6,18 +6,22 @@ from data_interpretation.graph_generators.GraphGenerator import GraphGenerator
 
 
 class ClassesPerProjectGraphGen(GraphGenerator):
+    possible_arguments = {"class_type": ["any", "class", "innerclass", "interface", "anonymous", "enum"]}
+
     def __init__(self):
         super().__init__("classes_per_project")
 
-    def generate_graph(self, df: pd.DataFrame, **kwargs):
-        if kwargs:
-            print("Extra arguments fed and ignored.")
+    @staticmethod
+    def prune_df_by_class(df: pd.DataFrame, class_type: str):
+        if class_type == "any":
+            return df
 
-        # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
+        return df.loc[df["type"] == class_type]
 
+    def generate_graph(self, df: pd.DataFrame, class_type="any"):
         data = zip(df["project_name"].unique(), [0] * len(df["project_name"].unique()))
 
-        df = df.loc[df["type"] == "class"]
+        df = self.prune_df_by_class(df, class_type)
 
         classes_df = pd.DataFrame(data=data, columns=['projectName', 'classesNbr'])
         for idx, project_name in enumerate(classes_df["projectName"]):
@@ -25,7 +29,7 @@ class ClassesPerProjectGraphGen(GraphGenerator):
 
         CLASS_PER_PROJECT_CAP = 3000
 
-        ### Seaborn version, has a nice theme
+        # Seaborn version, has a nice theme
         # classes_df = classes_df.loc[classes_df["classesNbr"] <= CLASS_PER_PROJECT_CAP]
         # sns.set_theme(style="darkgrid")
         # plot = sns.displot(data=classes_df, x="classesNbr")

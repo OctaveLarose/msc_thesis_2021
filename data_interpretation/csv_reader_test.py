@@ -29,16 +29,18 @@ def main():
     df = pd.read_csv("mega_class.csv")
 
     # graph_cls = MethodsPerClassGraphGen()
-    graph_cls = FieldsPerClassGraphGen()
-    # graph_cls = ClassesPerProjectGraphGen()
+    # graph_cls = FieldsPerClassGraphGen()
+    graph_cls = ClassesPerProjectGraphGen()
 
-    # graph_cls.generate_graph(df)
+    graph_cls.generate_graph(df)
     # graph_cls.generate_graph(df, field_type="public")
     # graph_cls.generate_graph(df, field_type="private")
     # graph_cls.generate_graph(df, field_type="protected")
     # graph_cls.generate_graph(df, method_type="static")
     # graph_cls.generate_graph(df, method_type="public")
     # graph_cls.generate_graph(df, method_type="protected")
+    # graph_cls.generate_graph(df, class_type="any")
+    graph_cls.generate_graph(df, class_type="class")
 
     graph_cls.show()
     # graph_cls.export()
