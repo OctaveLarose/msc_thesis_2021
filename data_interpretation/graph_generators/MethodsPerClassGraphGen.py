@@ -5,14 +5,18 @@ from data_interpretation.graph_generators.GraphGenerator import GraphGenerator
 
 
 class MethodsPerClassGraphGen(GraphGenerator):
+    possible_arguments = {"method_type": ["total", "static", "public", "private", "protected",
+                                          "default", "abstract", "final", "synchronized"]}
+
     def __init__(self):
         super().__init__("methods_per_class")
 
-    def generate_graph(self, df, **kwargs):
-        if kwargs:
-            print("Extra arguments fed and ignored.")
+    @staticmethod
+    def get_methods(df: pd.DataFrame, methods_type: str) -> pd.DataFrame:
+        return df[methods_type + "MethodsQty"]
 
-        # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
+    def generate_graph(self, df, method_type="total"):
+        self.name = method_type + "_methods_per_class"
 
         METHOD_GRAPH_CAP = 40
         # print(f"Classes with nbr methods <= {METHOD_GRAPH_CAP}: {len(df.loc[df['totalMethodsQty'] <= METHOD_GRAPH_CAP])}")
@@ -29,8 +33,7 @@ class MethodsPerClassGraphGen(GraphGenerator):
 
         # plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
 
-        # IMPORTANT NOTE: not taking anonymous/inner classes for now.
-        df = df.loc[df["type"] == "class"]
+        methods_series = self.get_methods(df, method_type)
 
         # Config for both axes
         ax1.set_ylabel('Number of classes')
@@ -40,13 +43,13 @@ class MethodsPerClassGraphGen(GraphGenerator):
 
         # Ax 1 config
         bins = np.arange(-0.5, METHOD_GRAPH_CAP + 1, 1)
-        ax1.hist(df["totalMethodsQty"], bins=bins)
+        ax1.hist(methods_series, bins=bins)
         ax1.set_xlim(right=METHOD_GRAPH_CAP)
 
         # Ax 2 config
-        max_len = df["totalMethodsQty"].max()
+        max_len = methods_series.max()
         bins = np.arange(0, max_len + 1, 20)
-        ax2.hist(df["totalMethodsQty"], bins=bins)
+        ax2.hist(methods_series, bins=bins)
         ax2.set_yscale('log')
         ax2.set_xlim([0, max_len])
         # ax2.set_ylim(top=100)

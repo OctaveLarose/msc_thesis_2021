@@ -5,23 +5,19 @@ from data_interpretation.graph_generators.GraphGenerator import GraphGenerator
 
 
 class FieldsPerClassGraphGen(GraphGenerator):
+    possible_arguments = {"field_type": ["total", "static", "public", "private", "protected",
+                                         "default", "abstract", "final", "synchronized"]}
+
     def __init__(self):
         super().__init__("methods_per_class")
 
     @staticmethod
     def get_fields(df: pd.DataFrame, field_type: str) -> pd.DataFrame:
-        # IMPORTANT NOTE: "totalFieldsQty" seems to be bugged, so I create it manually.
-        # However, it seems to never generate classes with only one method...
-        # ...so whether I'm misunderstanding it (and it's normal, somehow), either it's bugged.
-        # The numbers/curve look weird, as well.
+        # Note: "totalFieldsQty" seems to be bugged, so I create it manually.
         if field_type == "total":
-            return df["staticFieldsQty"] + \
-                   df["publicFieldsQty"] + \
+            return df["publicFieldsQty"] + \
                    df["privateFieldsQty"] + \
-                   df["protectedFieldsQty"] + \
-                   df["defaultFieldsQty"] + \
-                   df["visibleFieldsQty"] + \
-                   df["finalFieldsQty"]
+                   df["protectedFieldsQty"]
 
         return df[field_type + "FieldsQty"]
 

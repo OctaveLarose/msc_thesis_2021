@@ -17,6 +17,8 @@ class ClassesPerProjectGraphGen(GraphGenerator):
 
         data = zip(df["project_name"].unique(), [0] * len(df["project_name"].unique()))
 
+        df = df.loc[df["type"] == "class"]
+
         classes_df = pd.DataFrame(data=data, columns=['projectName', 'classesNbr'])
         for idx, project_name in enumerate(classes_df["projectName"]):
             classes_df.at[idx, "classesNbr"] = len(df[df["project_name"] == project_name])
