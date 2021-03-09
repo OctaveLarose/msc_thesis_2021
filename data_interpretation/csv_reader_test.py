@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import shutil
 
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
 from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
@@ -24,6 +25,32 @@ def generate_mega_class_csv():
     df.to_csv("mega_class.csv", sep=',', encoding='utf-8')
 
 
+def clean_output_graphs():
+    OUTPUT_GRAPH_DIR = 'output_graphs'
+
+    if os.path.isdir(OUTPUT_GRAPH_DIR):
+        shutil.rmtree('output_graphs')
+
+
+def mass_export():
+    clean_output_graphs()
+
+    df = pd.read_csv("mega_class.csv")
+
+    graph_classes = [MethodsPerClassGraphGen, FieldsPerClassGraphGen, ClassesPerProjectGraphGen]
+
+    # Involves evil dict manipulation, since there's only one kwarg per generate_graph() call for now
+    for idx, g_cls in enumerate(graph_classes):
+        print(f"# Graph classes progress: {g_cls} ({idx}/{len(graph_classes)})")
+        cls = g_cls()
+        flag = list(cls.possible_arguments.keys())[0]
+        possible_flag_values = list(cls.possible_arguments.values())[0]
+        for idx2, arg in enumerate(possible_flag_values):
+            print(f"Current graph class progress: {arg} ({idx2}/{len(possible_flag_values)})")
+            cls.generate_graph(df, **{flag: arg})
+            cls.export()
+
+
 def main():
     # generate_mega_class_csv()
     df = pd.read_csv("mega_class.csv")
@@ -34,11 +61,8 @@ def main():
 
     graph_cls.generate_graph(df)
     # graph_cls.generate_graph(df, field_type="public")
-    # graph_cls.generate_graph(df, field_type="private")
     # graph_cls.generate_graph(df, field_type="protected")
     # graph_cls.generate_graph(df, method_type="static")
-    # graph_cls.generate_graph(df, method_type="public")
-    # graph_cls.generate_graph(df, method_type="protected")
     # graph_cls.generate_graph(df, class_type="any")
     graph_cls.generate_graph(df, class_type="class")
 
@@ -47,4 +71,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # main()
+    mass_export()

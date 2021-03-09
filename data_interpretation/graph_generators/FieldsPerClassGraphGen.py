@@ -6,7 +6,7 @@ from data_interpretation.graph_generators.GraphGenerator import GraphGenerator
 
 class FieldsPerClassGraphGen(GraphGenerator):
     possible_arguments = {"field_type": ["total", "static", "public", "private", "protected",
-                                         "default", "abstract", "final", "synchronized"]}
+                                         "default", "final", "synchronized"]}
 
     def __init__(self):
         super().__init__("methods_per_class")

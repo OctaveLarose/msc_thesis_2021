@@ -1,3 +1,4 @@
+import datetime
 import os
 from abc import ABC, abstractmethod
 import matplotlib.pyplot as plt
@@ -10,6 +11,9 @@ class GraphGenerator(ABC):
     def __init__(self, name):
         self.name = name
 
+    def __del__(self):
+        plt.close()
+
     def show(self):
         plt.show()
 
@@ -18,7 +22,8 @@ class GraphGenerator(ABC):
         if not os.path.exists(OUTPUT_FOLDER):
             os.makedirs(OUTPUT_FOLDER)
 
-        plt.savefig(os.path.join(OUTPUT_FOLDER, self.name + ".png"))
+        cur_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+        plt.savefig(os.path.join(OUTPUT_FOLDER, self.name + cur_timestamp + ".png"))
 
     @abstractmethod
     def generate_graph(self, df: pd.DataFrame, **kwargs):
