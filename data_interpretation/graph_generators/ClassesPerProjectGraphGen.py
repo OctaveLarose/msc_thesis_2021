@@ -9,7 +9,10 @@ class ClassesPerProjectGraphGen(GraphGenerator):
     def __init__(self):
         super().__init__("classes_per_project")
 
-    def generate_graph(self, df: pd.DataFrame):
+    def generate_graph(self, df: pd.DataFrame, **kwargs):
+        if kwargs:
+            print("Extra arguments fed and ignored.")
+
         # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
 
         data = zip(df["project_name"].unique(), [0] * len(df["project_name"].unique()))

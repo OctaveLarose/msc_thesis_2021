@@ -16,5 +16,5 @@ class GraphGenerator(ABC):
         plt.savefig(self.name + ".png")
 
     @abstractmethod
-    def generate_graph(self, df: pd.DataFrame):
+    def generate_graph(self, df: pd.DataFrame, **kwargs):
         raise NotImplementedError

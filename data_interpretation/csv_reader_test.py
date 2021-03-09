@@ -33,9 +33,12 @@ def main():
     # graph_cls = ClassesPerProjectGraphGen()
 
     graph_cls.generate_graph(df)
+    # graph_cls.generate_graph(df, field_type="public")
+    # graph_cls.generate_graph(df, field_type="private")
+    # graph_cls.generate_graph(df, field_type="protected")
 
-    graph_cls.show()
-    # graph_cls.export()
+    # graph_cls.show()
+    graph_cls.export()
 
 
 if __name__ == "__main__":

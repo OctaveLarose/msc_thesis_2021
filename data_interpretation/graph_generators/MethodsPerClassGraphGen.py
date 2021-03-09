@@ -8,7 +8,10 @@ class MethodsPerClassGraphGen(GraphGenerator):
     def __init__(self):
         super().__init__("methods_per_class")
 
-    def generate_graph(self, df):
+    def generate_graph(self, df, **kwargs):
+        if kwargs:
+            print("Extra arguments fed and ignored.")
+
         # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
 
         METHOD_GRAPH_CAP = 40

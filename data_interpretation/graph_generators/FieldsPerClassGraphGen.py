@@ -8,7 +8,26 @@ class FieldsPerClassGraphGen(GraphGenerator):
     def __init__(self):
         super().__init__("methods_per_class")
 
-    def generate_graph(self, df):
+    @staticmethod
+    def get_fields(df: pd.DataFrame, field_type: str) -> pd.DataFrame:
+        # IMPORTANT NOTE: "totalFieldsQty" seems to be bugged, so I create it manually.
+        # However, it seems to never generate classes with only one method...
+        # ...so whether I'm misunderstanding it (and it's normal, somehow), either it's bugged.
+        # The numbers/curve look weird, as well.
+        if field_type == "total":
+            return df["staticFieldsQty"] + \
+                   df["publicFieldsQty"] + \
+                   df["privateFieldsQty"] + \
+                   df["protectedFieldsQty"] + \
+                   df["defaultFieldsQty"] + \
+                   df["visibleFieldsQty"] + \
+                   df["finalFieldsQty"]
+
+        return df[field_type + "FieldsQty"]
+
+    def generate_graph(self, df, field_type="total"):
+        self.name = field_type + "_methods_per_class"
+
         # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
 
         FIELD_GRAPH_CAP = 40
@@ -20,27 +39,17 @@ class FieldsPerClassGraphGen(GraphGenerator):
             ax.set_xlabel('Number of methods')
             ax.margins(x=0)
 
-        ## IMPORTANT NOTE: "totalFieldsQty" seems to be bugged, so I create it manually.
-        ## However, it seems to never generate classes with only one method...
-        ## ...so whether I'm misunderstanding it (and it's normal, somehow), either it's bugged.
-        ## The numbers/curve look weird, as well.
-        df["totalFieldsQty"] = df["staticFieldsQty"] + \
-                               df["publicFieldsQty"] + \
-                               df["privateFieldsQty"] + \
-                               df["protectedFieldsQty"] + \
-                               df["defaultFieldsQty"] + \
-                               df["visibleFieldsQty"] + \
-                               df["finalFieldsQty"]
+        fields = self.get_fields(df, field_type)
 
         # Ax 1 config
         bins = np.arange(-0.5, FIELD_GRAPH_CAP + 1, 1)
-        ax1.hist(df["totalFieldsQty"], bins=bins)
+        ax1.hist(fields, bins=bins)
         ax1.set_xlim(right=FIELD_GRAPH_CAP)
 
         # Ax 2 config
-        max_len = df["totalFieldsQty"].max()
+        max_len = fields.max()
         bins = np.arange(0, max_len + 1, 20)
-        ax2.hist(df["totalFieldsQty"], bins=bins)
+        ax2.hist(fields, bins=bins)
         ax2.set_yscale('log')
         ax2.set_xlim([0, max_len])
         # ax2.set_ylim(top=100)
