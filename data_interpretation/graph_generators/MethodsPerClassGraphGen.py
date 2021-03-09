@@ -37,8 +37,10 @@ class MethodsPerClassGraphGen(GraphGenerator):
 
         # Config for both axes
         ax1.set_ylabel('Number of classes')
+        x_label = 'Number of ' + method_type + ' methods' if method_type != "total" else "Total number of methods"
+        fig.setxlabel(x_label)
         for ax in [ax1, ax2]:
-            ax.set_xlabel('Number of methods')
+            # ax.set_xlabel(x_label)
             ax.margins(x=0)
 
         # Ax 1 config

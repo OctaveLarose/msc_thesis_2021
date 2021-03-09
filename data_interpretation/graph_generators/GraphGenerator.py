@@ -1,3 +1,4 @@
+import os
 from abc import ABC, abstractmethod
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -13,7 +14,11 @@ class GraphGenerator(ABC):
         plt.show()
 
     def export(self):
-        plt.savefig(self.name + ".png")
+        OUTPUT_FOLDER = "output_graphs"
+        if not os.path.exists(OUTPUT_FOLDER):
+            os.makedirs(OUTPUT_FOLDER)
+
+        plt.savefig(os.path.join(OUTPUT_FOLDER, self.name + ".png"))
 
     @abstractmethod
     def generate_graph(self, df: pd.DataFrame, **kwargs):

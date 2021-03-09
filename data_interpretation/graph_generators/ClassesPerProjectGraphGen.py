@@ -19,6 +19,8 @@ class ClassesPerProjectGraphGen(GraphGenerator):
         return df.loc[df["type"] == class_type]
 
     def generate_graph(self, df: pd.DataFrame, class_type="any"):
+        self.name = class_type + "_classes_per_project"
+
         data = zip(df["project_name"].unique(), [0] * len(df["project_name"].unique()))
 
         df = self.prune_df_by_class(df, class_type)
@@ -46,8 +48,15 @@ class ClassesPerProjectGraphGen(GraphGenerator):
         # sub_df = df.loc[df["totalMethodsQty"] <= METHOD_GRAPH_CAP]
         # Config for both axes
         ax1.set_ylabel('Number of projects')
+        if class_type == "any":
+            x_label = 'Number of classes (all types)'
+        elif class_type == "class":
+            x_label = 'Number of classes (no interfaces, etc.)'
+        else:
+            x_label = 'Number of ' + class_type + ' classes'
+
         for ax in [ax1, ax2]:
-            ax.set_xlabel('Number of classes')
+            ax.set_xlabel(x_label)
             ax.margins(x=0)
 
         # Ax 1 config
