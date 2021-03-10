@@ -39,16 +39,18 @@ def mass_export():
 
     graph_classes = [MethodsPerClassGraphGen, FieldsPerClassGraphGen, ClassesPerProjectGraphGen]
 
+    print("Exporting every graph...")
+
     # Involves evil dict manipulation, since there's only one kwarg per generate_graph() call for now
     for idx, g_cls in enumerate(graph_classes):
-        print(f"# Graph classes progress: {g_cls} ({idx}/{len(graph_classes)})")
         cls = g_cls()
         flag = list(cls.possible_arguments.keys())[0]
         possible_flag_values = list(cls.possible_arguments.values())[0]
         for idx2, arg in enumerate(possible_flag_values):
-            print(f"Current graph class progress: {arg} ({idx2}/{len(possible_flag_values)})")
             cls.generate_graph(df, **{flag: arg})
             cls.export()
+            print(f"Current graph class progress: {arg} ({idx2 + 1}/{len(possible_flag_values)})")
+        print(f"# Graph classes progress: {g_cls} ({idx + 1}/{len(graph_classes)})")
 
 
 def main():

@@ -22,7 +22,7 @@ class FieldsPerClassGraphGen(GraphGenerator):
         return df[field_type + "FieldsQty"]
 
     def generate_graph(self, df, field_type="total"):
-        self.name = field_type + "_methods_per_class"
+        self.name = field_type + "_fields_per_class"
 
         # df = pd.read_csv("/home/octavel/bordel/ck_data/class/class_jwtk_jjwt.csv")
 
