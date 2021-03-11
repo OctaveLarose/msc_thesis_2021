@@ -3,6 +3,7 @@ import pandas as pd
 import shutil
 
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
+from data_interpretation.graph_generators.FeatureCorrelationTestGraph import FeatureCorrelationTestGraph
 from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
 from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
 
@@ -33,7 +34,7 @@ def clean_output_graphs():
 
 
 def mass_export():
-    clean_output_graphs()
+    # clean_output_graphs()
 
     df = pd.read_csv("mega_class.csv")
 
@@ -46,7 +47,9 @@ def mass_export():
         cls = g_cls()
         flag = list(cls.possible_arguments.keys())[0]
         possible_flag_values = list(cls.possible_arguments.values())[0]
+        print(flag)
         for idx2, arg in enumerate(possible_flag_values):
+            print(arg)
             cls.generate_graph(df, **{flag: arg})
             cls.export()
             print(f"Current graph class progress: {arg} ({idx2 + 1}/{len(possible_flag_values)})")
@@ -59,19 +62,21 @@ def main():
 
     # graph_cls = MethodsPerClassGraphGen()
     # graph_cls = FieldsPerClassGraphGen()
-    graph_cls = ClassesPerProjectGraphGen()
+    graph_cls = FeatureCorrelationTestGraph()
+    # graph_cls = ClassesPerProjectGraphGen()
 
-    graph_cls.generate_graph(df)
+    # graph_cls.generate_graph(df)
     # graph_cls.generate_graph(df, field_type="public")
-    # graph_cls.generate_graph(df, field_type="protected")
+    graph_cls.generate_graph(df)
+    # graph_cls.generate_graph(df, field_type="static")
     # graph_cls.generate_graph(df, method_type="static")
     # graph_cls.generate_graph(df, class_type="any")
-    graph_cls.generate_graph(df, class_type="class")
+    # graph_cls.generate_graph(df, class_type="class")
 
     graph_cls.show()
     # graph_cls.export()
 
 
 if __name__ == "__main__":
-    # main()
-    mass_export()
+    main()
+    # mass_export()
