@@ -2,8 +2,8 @@ import os
 import pandas as pd
 import shutil
 
+from data_interpretation.csv_generators.FeatureCorrelationCsvGenerator import FeatureCorrelationCsvGenerator
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
-from data_interpretation.graph_generators.FeatureCorrelationTestGraph import FeatureCorrelationTestGraph
 from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
 from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
 
@@ -30,10 +30,22 @@ def clean_output_graphs():
     OUTPUT_GRAPH_DIR = 'output_graphs'
 
     if os.path.isdir(OUTPUT_GRAPH_DIR):
-        shutil.rmtree('output_graphs')
+        shutil.rmtree(OUTPUT_GRAPH_DIR)
 
 
-def mass_export():
+def clean_output_csvs():
+    OUTPUT_GRAPH_DIR = 'output_csvs'
+
+    if os.path.isdir(OUTPUT_GRAPH_DIR):
+        shutil.rmtree(OUTPUT_GRAPH_DIR)
+
+
+def wipe_outputs():
+    clean_output_graphs()
+    clean_output_csvs()
+
+
+def mass_export_graphs():
     # clean_output_graphs()
 
     df = pd.read_csv("mega_class.csv")
@@ -56,13 +68,12 @@ def mass_export():
         print(f"# Graph classes progress: {g_cls} ({idx + 1}/{len(graph_classes)})")
 
 
-def main():
+def export_graphs():
     # generate_mega_class_csv()
     df = pd.read_csv("mega_class.csv")
 
-    # graph_cls = MethodsPerClassGraphGen()
+    graph_cls = MethodsPerClassGraphGen()
     # graph_cls = FieldsPerClassGraphGen()
-    graph_cls = FeatureCorrelationTestGraph()
     # graph_cls = ClassesPerProjectGraphGen()
 
     # graph_cls.generate_graph(df)
@@ -77,6 +88,19 @@ def main():
     # graph_cls.export()
 
 
+def export_csvs():
+    df = pd.read_csv("mega_class.csv")
+
+    csv_cs = FeatureCorrelationCsvGenerator()
+    csv_cs.generate_df(df)
+    csv_cs.export()
+
+
+def main():
+    # export_graphs()
+    export_csvs()
+    # mass_export_graphs()
+
+
 if __name__ == "__main__":
     main()
-    # mass_export()
