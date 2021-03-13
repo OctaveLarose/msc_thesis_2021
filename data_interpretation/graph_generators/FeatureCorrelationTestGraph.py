@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -20,11 +22,22 @@ class FeatureCorrelationTestGraph(GraphGenerator):
             if a != b and (b, a) not in elem_pairs:
                 elem_pairs.append((a, b))
 
-        for idx, p in enumerate(elem_pairs):
-            corr, p_val = spearmanr(df[p[0]], df[p[1]])
-            if p_val > 0.005:
-                print(f'Spearmans correlation for {p[0]} and {p[1]}: {corr:.3f}')
-                print(f'p_value: {p_val:.4f}')
+        corr_df = pd.DataFrame(columns=["attr1", "attr2", "correlation", "p"])
+        for idx, (a, b) in enumerate(elem_pairs):
+            corr, p = spearmanr(df[a], df[b])
+            corr_df.loc[idx] = [a, b, corr, p]
+
+            CORR_THRESHOLD_POS = 1000
+            CORR_THRESHOLD_NEG = -0.1
+            if corr > CORR_THRESHOLD_POS or corr < CORR_THRESHOLD_NEG:
+                print(f'Spearmans correlation for {a} and {b}: {corr:.3f}')
+                print(f'p_value: {p:.4f}')
+            # print(f"Progress: {idx}/{len(elem_pairs)}")
+
+        if not os.path.exists("output_csvs"):
+            os.makedirs("output_csvs")
+        corr_df.to_csv("output_csvs/attribute_correlations.csv")
+
 
     def generate_graph(self, df, **kwargs):
         if kwargs:
