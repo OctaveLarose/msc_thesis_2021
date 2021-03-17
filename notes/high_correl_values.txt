@@ -1,0 +1,38 @@
+WMC: nbr of branch instructions.
+RFC: nbr of unique method invocations
+NOSI: nbr of static invocations
+
+(SE: self-explanatory)
+
+Spearman CC for wmc and totalMethodsQty: 0.925 # SE. Does it imply methods tend to be the same length?
+Spearman CC for wmc and publicMethodsQty: 0.748 # SE but... No private/protected? Then do they tend to be less complex?
+Spearman CC for wmc and abstractMethodsQty: 0.886 # SE? Abstract methods mean implementations later down the line, so WMC in OTHER classes
+Spearman CC for wmc and loc: 0.879 # SE
+Spearman CC for wmc and assignmentsQty: 0.720 # SE (note: not incredibly strong because no obvious strong correl: branches /=/ assignments)
+Spearman CC for wmc and uniqueWordsQty: 0.776 # More branches equals more unique words... I expected less correl personally
+Spearman CC for rfc and defaultMethodsQty: -0.116 # NOT SE: ...if there are default methods then they tend not to query other methods? Probably.
+Spearman CC for rfc and nosi: 0.708 # SE: if you invoke static methods then you can invoke static methods. Insane
+Spearman CC for rfc and loc: 0.771 # SE
+Spearman CC for rfc and assignmentsQty: 0.725 # SE: method return values associated to variables
+Spearman CC for rfc and variablesQty: 0.708 # SE: same as assignmentsQty and slightly less since less variables than assignments
+Spearman CC for lcom and totalMethodsQty: 0.730 # SE
+Spearman CC for totalMethodsQty and publicMethodsQty: 0.790 # SE, but does it imply there tends to be only public methods?
+Spearman CC for totalMethodsQty and abstractMethodsQty: 0.970 # Very SE, and the strength implies there tends to be ONLY abstract methods if I get it
+Spearman CC for totalMethodsQty and loc: 0.808 # SE
+Spearman CC for totalMethodsQty and uniqueWordsQty: 0.732 # SE, but the lower strength shows the repetition of words in method names probably
+Spearman CC for publicMethodsQty and defaultMethodsQty: -0.298 # NOT SE. Is it because default methods are public by default?
+Spearman CC for publicMethodsQty and abstractMethodsQty: 0.805 # SE: implies there tends to be only public methods, I think.
+Spearman CC for publicMethodsQty and loc: 0.719 # SE
+Spearman CC for abstractMethodsQty and loc: 0.764 # SE. I think it's higher than public methods because of public getters/setters.
+Spearman CC for totalFieldsQty and staticFieldsQty: 0.913 # SE: There tends to be only static fields in some classes
+Spearman CC for totalFieldsQty and protectedFieldsQty: 0.878 # SE: same logic
+Spearman CC for totalFieldsQty and finalFieldsQty: 0.710 # SE: same logic
+Spearman CC for staticFieldsQty and protectedFieldsQty: 0.807 # SE: same logic
+Spearman CC for staticFieldsQty and variablesQty: 0.751 # NOT SE: ...uuh. Yeah I really don't get it. Generating variables from static fields?
+Spearman CC for loc and assignmentsQty: 0.836 # SE
+Spearman CC for loc and variablesQty: 0.813 # SE
+Spearman CC for loc and uniqueWordsQty: 0.802 # SE
+Spearman CC for comparisonsQty and maxNestedBlocksQty: 0.733 # SE, but interesting : doesn't it imply there tend to not be comparisons qty ?
+Spearman CC for assignmentsQty and variablesQty: 0.954 # SE
+Spearman CC for assignmentsQty and uniqueWordsQty: 0.733 # SE
+Spearman CC for variablesQty and uniqueWordsQty: 0.725 # SE

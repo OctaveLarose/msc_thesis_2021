@@ -22,6 +22,13 @@ class FeatureCorrelationCsvGenerator(CsvGenerator):
                                df["privateFieldsQty"] + \
                                df["protectedFieldsQty"]
 
+        # # Test: removing outliers
+        # for c in df:
+        #     if df[c].dtype != int:
+        #         continue
+        #     for i in range(50):
+        #         df = df.drop(df[c].idxmax())
+
         int_cols = [c for c in df[1:] if df[c].dtype == int]
         int_cols = int_cols[1:]  # Removing first element (index col.)
 
@@ -35,11 +42,11 @@ class FeatureCorrelationCsvGenerator(CsvGenerator):
             corr, p = spearmanr(df[a], df[b])
             corr_df.loc[idx] = [a, b, corr, p]
 
-            CORR_THRESHOLD_POS = 0.8
+            CORR_THRESHOLD_POS = 0.7
             CORR_THRESHOLD_NEG = -0.1
             if corr > CORR_THRESHOLD_POS or corr < CORR_THRESHOLD_NEG:
-                print(f'Spearmans correlation for {a} and {b}: {corr:.3f}')
-                print(f'p_value: {p:.4f}')
+                print(f'Spearman CC for {a} and {b}: {corr:.3f}')
+                # print(f'p_value: {p:.4f}')
             # print(f"Progress: {idx}/{len(elem_pairs)}")
 
         self.df = corr_df
