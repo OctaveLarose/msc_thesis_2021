@@ -20,7 +20,7 @@ def main():
             continue
 
         if run_ck(codebase_path):
-            move_output_csv_files(codebase_path.split("/")[-1])
+            move_output_csv_files(codebase_path)
         else:
             print("Error while running CK. Deleting CSV files.")
             for csv_fn in OUTPUT_CSV_FILE_NAMES:
@@ -31,11 +31,16 @@ def main():
 
 
 def run_ck(codebase_path: str) -> bool:
+    # FLAGS REF: <use jars:true|false> <max files per partition,0=auto selection> <variables + fields metrics?
+    # true|false>
+    def get_ck_command_arr(flags: [str] = "true 0 false") -> [str]:
+        return ["java", "-jar", os.path.abspath(CK_JAR_PATH), ".", *flags.split()]
+
     TIMEOUT_AFTER_X_SEC = 60
     ck_command_arr = get_ck_command_arr(codebase_path)
 
     try:
-        subprocess.run(ck_command_arr, check=True, timeout=TIMEOUT_AFTER_X_SEC)
+        subprocess.run(ck_command_arr, check=True, cwd=codebase_path, timeout=TIMEOUT_AFTER_X_SEC)
     except subprocess.TimeoutExpired:
         print(f'Error: command {" ".join(ck_command_arr)} timed out after {TIMEOUT_AFTER_X_SEC} seconds.', file=sys.stderr)
         return False
@@ -46,19 +51,17 @@ def run_ck(codebase_path: str) -> bool:
     return True
 
 
-# FLAGS REF: <use jars:true|false> <max files per partition,0=auto selection> <variables + fields metrics? true|false>
-def get_ck_command_arr(codebase_path: str, flags: [str] = "true 0 false") -> [str]:
-    return ["java", "-jar", CK_JAR_PATH, codebase_path, *flags.split()]
-
-
-def move_output_csv_files(codebase_name: str):
+def move_output_csv_files(codebase_path: str):
     if not os.path.isdir(OUTPUT_DATA_DIR):
         os.mkdir(OUTPUT_DATA_DIR)
+
+    codebase_name = codebase_path.split("/")[-1]
 
     for csv_fn in OUTPUT_CSV_FILE_NAMES:
         if not os.path.isdir(os.path.join(OUTPUT_DATA_DIR, csv_fn)):
             os.mkdir(os.path.join(OUTPUT_DATA_DIR, csv_fn))
-        os.rename(csv_fn + ".csv", os.path.join(OUTPUT_DATA_DIR, csv_fn, f"{csv_fn}_{codebase_name}.csv"))
+        os.rename(os.path.join(codebase_path, csv_fn + ".csv"),
+                  os.path.join(OUTPUT_DATA_DIR, csv_fn, f"{csv_fn}_{codebase_name}.csv"))
 
 
 if __name__ == "__main__":
