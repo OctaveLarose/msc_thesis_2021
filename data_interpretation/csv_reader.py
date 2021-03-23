@@ -1,4 +1,7 @@
+from datetime import datetime
 import os
+import zipfile
+
 import pandas as pd
 import shutil
 
@@ -6,6 +9,9 @@ from data_interpretation.csv_generators.FeatureCorrelationCsvGenerator import Fe
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
 from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
 from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
+
+OUTPUT_GRAPH_DIR = 'output_graphs'
+OUTPUT_CSV_DIR = 'output_csvs'
 
 
 def generate_mega_class_csv():
@@ -27,17 +33,19 @@ def generate_mega_class_csv():
 
 
 def clean_output_graphs():
-    OUTPUT_GRAPH_DIR = 'output_graphs'
+    graph_files = os.listdir(OUTPUT_GRAPH_DIR)
 
-    if os.path.isdir(OUTPUT_GRAPH_DIR):
-        shutil.rmtree(OUTPUT_GRAPH_DIR)
+    for item in graph_files:
+        if item.endswith(".png"):
+            os.remove(os.path.join(OUTPUT_GRAPH_DIR, item))
 
 
 def clean_output_csvs():
-    OUTPUT_GRAPH_DIR = 'output_csvs'
+    graph_files = os.listdir(OUTPUT_CSV_DIR)
 
-    if os.path.isdir(OUTPUT_GRAPH_DIR):
-        shutil.rmtree(OUTPUT_GRAPH_DIR)
+    for item in graph_files:
+        if item.endswith(".csv"):
+            os.remove(os.path.join(OUTPUT_CSV_DIR, item))
 
 
 def wipe_outputs():
@@ -46,7 +54,7 @@ def wipe_outputs():
 
 
 def mass_export_graphs():
-    # clean_output_graphs()
+    clean_output_graphs()
 
     df = pd.read_csv("mega_class.csv")
 
@@ -59,13 +67,22 @@ def mass_export_graphs():
         cls = g_cls()
         flag = list(cls.possible_arguments.keys())[0]
         possible_flag_values = list(cls.possible_arguments.values())[0]
-        print(flag)
         for idx2, arg in enumerate(possible_flag_values):
-            print(arg)
             cls.generate_graph(df, **{flag: arg})
             cls.export()
             print(f"Current graph class progress: {arg} ({idx2 + 1}/{len(possible_flag_values)})")
         print(f"# Graph classes progress: {g_cls} ({idx + 1}/{len(graph_classes)})")
+
+    zipf = zipfile.ZipFile(
+        f'output_graphs/output_graphs_{datetime.now().strftime("%d_%m")}.zip',
+        'w',
+        zipfile.ZIP_DEFLATED)
+
+    for root, dirs, files in os.walk(OUTPUT_GRAPH_DIR):
+        for file in files:
+            if file.endswith(".png"):
+                zipf.write(os.path.join(root, file), file)
+    zipf.close()
 
 
 def export_graphs():
