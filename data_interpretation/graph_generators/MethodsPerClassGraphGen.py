@@ -15,6 +15,14 @@ class MethodsPerClassGraphGen(GraphGenerator):
     def get_methods(df: pd.DataFrame, methods_type: str) -> pd.DataFrame:
         return df[methods_type + "MethodsQty"]
 
+    # Used for testing, might become something more in the future
+    @staticmethod
+    def find_outliers(attribute_name: str, df: pd.DataFrame):
+        df = df.sort_values(by=[attribute_name])
+        for elem in df.iterrows():
+            print(elem[1].get(df.columns.get_loc('file')),
+                  elem[1].get(df.columns.get_loc(attribute_name)))
+
     def generate_graph(self, df, method_type="total"):
         self.name = method_type + "_methods_per_class"
 
@@ -34,6 +42,8 @@ class MethodsPerClassGraphGen(GraphGenerator):
         # plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
 
         methods_series = self.get_methods(df, method_type)
+
+        # self.find_outliers('abstractMethodsQty', df)
 
         # Config for both axes
         ax1.set_ylabel('Number of classes')
