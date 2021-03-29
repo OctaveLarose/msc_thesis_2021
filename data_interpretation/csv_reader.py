@@ -4,13 +4,11 @@ import zipfile
 
 import pandas as pd
 
+from data_interpretation.constants import *
 from data_interpretation.csv_generators.FeatureCorrelationCsvGenerator import FeatureCorrelationCsvGenerator
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
 from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
 from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
-
-OUTPUT_GRAPH_DIR = 'output_graphs'
-OUTPUT_CSV_DIR = 'output_csvs'
 
 
 def generate_mega_class_csv():
@@ -77,7 +75,7 @@ def mass_export_graphs():
         print(f"# Graph classes progress: {g_cls} ({idx + 1}/{len(graph_classes)})")
 
     zipf = zipfile.ZipFile(
-        f'output_graphs/output_graphs_{datetime.now().strftime("%d_%m")}.zip',
+        os.path.join(OUTPUT_GRAPH_DIR, f'output_graphs_{datetime.now().strftime("%d_%m")}.zip'),
         'w',
         zipfile.ZIP_DEFLATED)
 
@@ -119,8 +117,8 @@ def export_csvs():
 
 def main():
     # generate_mega_class_csv()
-    export_graphs()
-    # export_csvs()
+    # export_graphs()
+    export_csvs()
     # mass_export_graphs()
 
 
