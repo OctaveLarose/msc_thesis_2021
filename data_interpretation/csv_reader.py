@@ -3,7 +3,6 @@ import os
 import zipfile
 
 import pandas as pd
-import shutil
 
 from data_interpretation.csv_generators.FeatureCorrelationCsvGenerator import FeatureCorrelationCsvGenerator
 from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
@@ -15,7 +14,7 @@ OUTPUT_CSV_DIR = 'output_csvs'
 
 
 def generate_mega_class_csv():
-    class_csv_path = "/home/octavel/bordel/ck_data/class/"
+    class_csv_path = "../data/ck_data/class/"
     csv_filenames = os.listdir(class_csv_path)
 
     df = None
@@ -23,6 +22,10 @@ def generate_mega_class_csv():
         csv_path = os.path.join(class_csv_path, csv_name)
         new_df = pd.read_csv(csv_path)
         new_df["project_name"] = csv_name[6:-4]  # Removing "class_" and ".csv"
+
+        # Attempting to remove tests
+        new_df = new_df[new_df["file"].str.find("test") != -1]
+
         if df is not None:
             df = pd.concat((df, new_df))
         else:
@@ -95,9 +98,10 @@ def export_graphs():
 
     # graph_cls.generate_graph(df)
     # graph_cls.generate_graph(df, field_type="public")
-    graph_cls.generate_graph(df)
+    # graph_cls.generate_graph(df)
     # graph_cls.generate_graph(df, field_type="static")
     # graph_cls.generate_graph(df, method_type="static")
+    graph_cls.generate_graph(df, method_type="abstract")
     # graph_cls.generate_graph(df, class_type="any")
     # graph_cls.generate_graph(df, class_type="class")
 
@@ -114,8 +118,9 @@ def export_csvs():
 
 
 def main():
-    # export_graphs()
-    export_csvs()
+    # generate_mega_class_csv()
+    export_graphs()
+    # export_csvs()
     # mass_export_graphs()
 
 

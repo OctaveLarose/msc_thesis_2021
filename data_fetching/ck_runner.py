@@ -3,10 +3,10 @@ import subprocess
 import sys
 
 
-CODEBASES_DIR = "../../../../java_codebases"
-OUTPUT_DATA_DIR = "../../../../ck_data"
+CODEBASES_DIR = "../data/java_codebases"
+OUTPUT_DATA_DIR = "../data/ck_data"
 CK_JAR_PATH = "./ck-0.6.3-with-deps.jar"
-OUTPUT_CSV_FILE_NAMES = ["class", "method"]
+OUTPUT_CSV_FILE_NAMES = ["class", "method", "field", "variable"]
 
 
 def main():
@@ -33,7 +33,7 @@ def main():
 def run_ck(codebase_path: str) -> bool:
     # FLAGS REF: <use jars:true|false> <max files per partition,0=auto selection> <variables + fields metrics?
     # true|false>
-    def get_ck_command_arr(flags: [str] = "true 0 false") -> [str]:
+    def get_ck_command_arr(flags: [str] = "true 0 true") -> [str]:
         return ["java", "-jar", os.path.abspath(CK_JAR_PATH), ".", *flags.split()]
 
     TIMEOUT_AFTER_X_SEC = 60
