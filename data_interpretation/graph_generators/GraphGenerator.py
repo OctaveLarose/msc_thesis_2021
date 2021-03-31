@@ -26,6 +26,7 @@ class GraphGenerator(ABC):
         cur_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
         plt.savefig(os.path.join(OUTPUT_GRAPH_DIR, self.name + cur_timestamp + ".png"))
 
+    # TODO: would be nice if we checked if element_type is in the possible_arguments field
     @abstractmethod
-    def generate_graph(self, df: pd.DataFrame, **kwargs):
+    def generate_graph(self, df: pd.DataFrame, element_type: str):
         raise NotImplementedError

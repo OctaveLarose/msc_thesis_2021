@@ -6,9 +6,10 @@ import pandas as pd
 
 from data_interpretation.constants import *
 from data_interpretation.csv_generators.FeatureCorrelationCsvGenerator import FeatureCorrelationCsvGenerator
-from data_interpretation.graph_generators.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
-from data_interpretation.graph_generators.FieldsPerClassGraphGen import FieldsPerClassGraphGen
-from data_interpretation.graph_generators.MethodsPerClassGraphGen import MethodsPerClassGraphGen
+from data_interpretation.graph_generators.class_related.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
+from data_interpretation.graph_generators.class_related.FieldsPerClassGraphGen import FieldsPerClassGraphGen
+from data_interpretation.graph_generators.class_related.MethodsPerClassGraphGen import MethodsPerClassGraphGen
+from data_interpretation.graph_generators.variable_related.UsagesPerVariableGraphGen import UsagesPerVariableGraphGen
 
 
 def generate_mega_class_csv():
@@ -88,23 +89,27 @@ def mass_export_graphs():
 
 def export_graphs():
     # generate_mega_class_csv()
-    df = pd.read_csv("mega_class.csv")
+    class_df = pd.read_csv("mega_class.csv")
+    field_df = pd.read_csv("../input_data/benchmarks_stefan_metrics/field.csv")
+    var_df = pd.read_csv("../input_data/benchmarks_stefan_metrics/variable.csv")
 
-    graph_cls = MethodsPerClassGraphGen()
+    # graph_cls = MethodsPerClassGraphGen()
+    graph_cls = UsagesPerVariableGraphGen()
     # graph_cls = FieldsPerClassGraphGen()
     # graph_cls = ClassesPerProjectGraphGen()
 
     # graph_cls.generate_graph(df)
-    # graph_cls.generate_graph(df, field_type="public")
+    # graph_cls.generate_graph(df, "public")
     # graph_cls.generate_graph(df)
-    # graph_cls.generate_graph(df, field_type="static")
-    # graph_cls.generate_graph(df, method_type="static")
-    graph_cls.generate_graph(df, method_type="abstract")
-    # graph_cls.generate_graph(df, class_type="any")
-    # graph_cls.generate_graph(df, class_type="class")
+    # graph_cls.generate_graph(df, "static")
+    # graph_cls.generate_graph(df, "static")
+    graph_cls.generate_graph(field_df, "field")
+    # graph_cls.generate_graph(var_df, "local")
+    # graph_cls.generate_graph(df, "any")
+    # graph_cls.generate_graph(df, "class")
 
-    graph_cls.show()
-    # graph_cls.export()
+    # graph_cls.show()
+    graph_cls.export()
 
 
 def export_csvs():
@@ -117,8 +122,8 @@ def export_csvs():
 
 def main():
     # generate_mega_class_csv()
-    # export_graphs()
-    export_csvs()
+    export_graphs()
+    # export_csvs()
     # mass_export_graphs()
 
 

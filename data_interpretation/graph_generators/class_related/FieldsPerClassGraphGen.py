@@ -31,7 +31,7 @@ class FieldsPerClassGraphGen(GraphGenerator):
 
         # Config for both axes
         ax1.set_ylabel('Number of classes')
-        x_label = 'Number of ' + field_type + ' fields' if field_type != "total" else "Total number of fields"
+        x_label = ('Number of ' + field_type + ' fields') if field_type != "total" else "Total number of fields"
         for ax in [ax1, ax2]:
             ax.set_xlabel(x_label)
             ax.margins(x=0)
