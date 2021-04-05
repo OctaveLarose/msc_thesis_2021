@@ -1,3 +1,6 @@
 [submodule "data_fetching/github-fat-cloner"]
 	path = data_fetching/github-fat-cloner
 	url = git@github.com:OctaveLarose/github-fat-cloner.git
+[submodule "code_generator"]
+	path = code_generator
+	url = git@github.com:OctaveLarose/code_generator.git
