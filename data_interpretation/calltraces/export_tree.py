@@ -23,8 +23,8 @@ def export_tree(project_name: str, input_lines: [Dict], only_render=False):
         prev_method_name = prev_arg["class"] + "-" + prev_arg["method"]
         if line["method_access"] == "entry":
             dot.edge(prev_method_name, method_name, constraint='false')
-        elif line["method_access"] == "exit":
-            dot.edge(method_name, prev_method_name, constraint='false')
+        # elif line["method_access"] == "exit":
+        #     dot.edge(method_name, prev_method_name, constraint='false')
         prev_arg = line
 
     if not only_render:
