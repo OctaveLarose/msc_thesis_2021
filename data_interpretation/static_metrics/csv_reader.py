@@ -4,12 +4,12 @@ import zipfile
 
 import pandas as pd
 
-from data_interpretation.constants import *
-from data_interpretation.csv_generators.FeatureCorrelationCsvGenerator import FeatureCorrelationCsvGenerator
-from data_interpretation.graph_generators.class_related.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
-from data_interpretation.graph_generators.class_related.FieldsPerClassGraphGen import FieldsPerClassGraphGen
-from data_interpretation.graph_generators.class_related.MethodsPerClassGraphGen import MethodsPerClassGraphGen
-from data_interpretation.graph_generators.variable_related.UsagesPerVariableGraphGen import UsagesPerVariableGraphGen
+from data_interpretation.static_metrics.constants import *
+from data_interpretation.static_metrics.csv_generators.FeatureCorrelationCsvGenerator import FeatureCorrelationCsvGenerator
+from data_interpretation.static_metrics.graph_generators.class_related.ClassesPerProjectGraphGen import ClassesPerProjectGraphGen
+from data_interpretation.static_metrics.graph_generators.class_related.FieldsPerClassGraphGen import FieldsPerClassGraphGen
+from data_interpretation.static_metrics.graph_generators.class_related.MethodsPerClassGraphGen import MethodsPerClassGraphGen
+from data_interpretation.static_metrics.graph_generators.variable_related.UsagesPerVariableGraphGen import UsagesPerVariableGraphGen
 
 
 def generate_mega_class_csv():
@@ -90,8 +90,8 @@ def mass_export_graphs():
 def export_graphs():
     # generate_mega_class_csv()
     class_df = pd.read_csv("mega_class.csv")
-    field_df = pd.read_csv("../input_data/benchmarks_stefan_metrics/field.csv")
-    var_df = pd.read_csv("../input_data/benchmarks_stefan_metrics/variable.csv")
+    field_df = pd.read_csv("../../input_data/benchmarks_stefan_metrics/field.csv")
+    var_df = pd.read_csv("../../input_data/benchmarks_stefan_metrics/variable.csv")
 
     # graph_cls = MethodsPerClassGraphGen()
     graph_cls = UsagesPerVariableGraphGen()
@@ -108,8 +108,8 @@ def export_graphs():
     # graph_cls.generate_graph(df, "any")
     # graph_cls.generate_graph(df, "class")
 
-    # graph_cls.show()
-    graph_cls.export()
+    graph_cls.show()
+    # graph_cls.export()
 
 
 def export_csvs():

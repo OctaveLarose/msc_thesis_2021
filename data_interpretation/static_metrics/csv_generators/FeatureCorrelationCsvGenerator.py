@@ -1,11 +1,7 @@
-import os
-
 import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
 
-from data_interpretation.csv_generators.CsvGenerator import CsvGenerator
-from scipy.stats import spearmanr, shapiro
+from data_interpretation.static_metrics.csv_generators.CsvGenerator import CsvGenerator
+from scipy.stats import spearmanr
 import itertools
 
 

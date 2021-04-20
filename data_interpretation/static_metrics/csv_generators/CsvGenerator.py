@@ -3,7 +3,7 @@ import os
 from abc import ABC, abstractmethod
 import pandas as pd
 
-from data_interpretation.constants import OUTPUT_CSV_DIR
+from data_interpretation.static_metrics.constants import OUTPUT_CSV_DIR
 
 
 class CsvGenerator(ABC):

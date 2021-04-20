@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-from data_interpretation.graph_generators.GraphGenerator import GraphGenerator
+from data_interpretation.static_metrics.graph_generators.GraphGenerator import GraphGenerator
 
 
 class FieldsPerClassGraphGen(GraphGenerator):

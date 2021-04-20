@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from data_interpretation.constants import OUTPUT_GRAPH_DIR
+from data_interpretation.static_metrics.constants import OUTPUT_GRAPH_DIR
 
 
 class GraphGenerator(ABC):
