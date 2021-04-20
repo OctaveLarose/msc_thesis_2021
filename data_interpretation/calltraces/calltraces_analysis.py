@@ -39,6 +39,10 @@ def export_benchmark_calltrace_graphs():
 
     for idx, calltrace_txt_fn in enumerate(os.listdir(calltrace_benchmarks_dir)):
         # One of my files is thick as fuck, so processing it doesn't make my RAM happy
+        if calltrace_txt_fn[-4:] != ".txt":
+            print(f"Skipping {idx + 1}: {calltrace_txt_fn} (not a .txt)")
+            continue
+
         if calltrace_txt_fn != "calltrace_Havlak.txt":
             parsed_file = parse_calltrace_file(os.path.join(calltrace_benchmarks_dir, calltrace_txt_fn))
             export_tree(calltrace_txt_fn[:-4], parsed_file)
