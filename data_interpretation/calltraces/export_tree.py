@@ -17,15 +17,21 @@ def export_tree(project_name: str, input_lines: [Dict], only_render=False):
             node_names.add(method_name)
             dot.node(method_name)
 
-    prev_arg = input_lines[0]
-    for line in input_lines[1:]:
+    function_stack = []
+    for line in input_lines:
         method_name = line["class"] + "-" + line["method"]
-        prev_method_name = prev_arg["class"] + "-" + prev_arg["method"]
+
         if line["method_access"] == "entry":
-            dot.edge(prev_method_name, method_name, constraint='false')
-        # elif line["method_access"] == "exit":
-        #     dot.edge(method_name, prev_method_name, constraint='false')
-        prev_arg = line
+            function_stack.append(method_name)
+            if len(function_stack) >= 2:
+                dot.edge(function_stack[-2], method_name, constraint='false')
+        elif line["method_access"] == "exit":
+            method_name = function_stack.pop()
+            if len(function_stack) >= 1:
+                dot.edge(function_stack[-1], method_name, constraint='false')
+
+    # Does nothing, but theoretically should :(
+    dot = dot.unflatten(stagger=3)
 
     if not only_render:
         dot.render(os.path.join(OUTPUT_TREES_DIR, project_name), cleanup=True)
