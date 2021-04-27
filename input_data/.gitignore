@@ -1,0 +1,6 @@
+java_codebases
+old_input_data
+ck_data
+
+# because it's FAT
+calltraces_benchmarks/calltrace_Havlak.txt
