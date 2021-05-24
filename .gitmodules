@@ -4,3 +4,6 @@
 [submodule "code_generator"]
 	path = code_generator
 	url = git@github.com:OctaveLarose/code_generator.git
+[submodule "data_fetching/disl_metrics_fetcher"]
+	path = data_fetching/disl_metrics_fetcher
+	url = https://github.com/OctaveLarose/disl_metrics_fetcher
