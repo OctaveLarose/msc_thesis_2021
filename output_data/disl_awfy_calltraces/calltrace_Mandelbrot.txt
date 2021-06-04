@@ -1,0 +1,32 @@
+> Run.getSuiteFromName
+< Run.getSuiteFromName (22498070 ns)
+> Run.<init>
+< Run.<init> (23406696 ns)
+> Run.setNumIterations
+< Run.setNumIterations (15624 ns)
+> Harness.processArguments
+< Harness.processArguments (39840668 ns)
+> Benchmark.<init>
+< Benchmark.<init> (24080 ns)
+> Mandelbrot.<init>
+< Mandelbrot.<init> (136625 ns)
+> Mandelbrot.mandelbrot
+< Mandelbrot.mandelbrot (12183 ns)
+> Mandelbrot.verifyResult
+< Mandelbrot.verifyResult (12253 ns)
+> Mandelbrot.innerBenchmarkLoop
+< Mandelbrot.innerBenchmarkLoop (137606 ns)
+> Run.printResult
+< Run.printResult (57531 ns)
+> Run.measure
+< Run.measure (307132 ns)
+> Run.doRuns
+< Run.doRuns (368878 ns)
+> Run.reportBenchmark
+< Run.reportBenchmark (63234 ns)
+> Run.runBenchmark
+< Run.runBenchmark (952362 ns)
+> Run.printTotal
+< Run.printTotal (47809 ns)
+> Harness.main
+< Harness.main (41112484 ns)

@@ -1,0 +1,132 @@
+> Run.getSuiteFromName
+< Run.getSuiteFromName (47157390 ns)
+> Run.<init>
+< Run.<init> (48683002 ns)
+> Run.setNumIterations
+< Run.setNumIterations (24041 ns)
+> Harness.processArguments
+< Harness.processArguments (103547625 ns)
+> Benchmark.<init>
+< Benchmark.<init> (184708 ns)
+> CD.<init>
+< CD.<init> (973094 ns)
+> som/Vector.<init>
+< som/Vector.<init> (19187 ns)
+> som/Vector.<init>
+< som/Vector.<init> (173859 ns)
+> cd/CallSign.<init>
+< cd/CallSign.<init> (48637 ns)
+> som/Vector.append
+< som/Vector.append (16295 ns)
+> cd/Simulator.<init>
+< cd/Simulator.<init> (36640081 ns)
+> cd/Vector2D.<init>
+< cd/Vector2D.<init> (44487 ns)
+> cd/Vector2D.<init>
+< cd/Vector2D.<init> (12360 ns)
+> cd/CollisionDetector.<clinit>
+< cd/CollisionDetector.<clinit> (7536730 ns)
+> cd/RedBlackTree.<init>
+< cd/RedBlackTree.<init> (52268 ns)
+> cd/CollisionDetector.<init>
+< cd/CollisionDetector.<init> (26096716 ns)
+> som/Vector.<init>
+< som/Vector.<init> (10517 ns)
+> som/Vector.<init>
+< som/Vector.<init> (74359 ns)
+> som/Vector.size
+< som/Vector.size (13546 ns)
+> som/Vector.at
+< som/Vector.at (33117 ns)
+> cd/Vector3D.<init>
+< cd/Vector3D.<init> (41719 ns)
+> cd/Aircraft.<init>
+< cd/Aircraft.<init> (25680 ns)
+> som/Vector.append
+< som/Vector.append (10005 ns)
+> som/Vector.at
+< som/Vector.at (8730 ns)
+> cd/Vector3D.<init>
+< cd/Vector3D.<init> (8226 ns)
+> cd/Aircraft.<init>
+< cd/Aircraft.<init> (20199 ns)
+> som/Vector.append
+< som/Vector.append (9597 ns)
+> som/Vector.size
+< som/Vector.size (8089 ns)
+> cd/Simulator.simulate
+< cd/Simulator.simulate (10138505 ns)
+> som/Vector.<init>
+< som/Vector.<init> (10303 ns)
+> som/Vector.<init>
+< som/Vector.<init> (60877 ns)
+> cd/RedBlackTree.<init>
+< cd/RedBlackTree.<init> (8283 ns)
+> cd/CollisionDetector$$Lambda$1.<init>
+< cd/CollisionDetector$$Lambda$1.<init> (24051 ns)
+> cd/CollisionDetector$$Lambda$1.get$Lambda
+< cd/CollisionDetector$$Lambda$1.get$Lambda (137887 ns)
+> cd/RedBlackTree$Color.<init>
+< cd/RedBlackTree$Color.<init> (16941 ns)
+> cd/RedBlackTree$Color.<init>
+< cd/RedBlackTree$Color.<init> (7915 ns)
+> cd/RedBlackTree$Color.<clinit>
+< cd/RedBlackTree$Color.<clinit> (257411 ns)
+> cd/RedBlackTree$Node.<init>
+< cd/RedBlackTree$Node.<init> (10989635 ns)
+> cd/RedBlackTree$Node.access$202
+< cd/RedBlackTree$Node.access$202 (9422 ns)
+> cd/RedBlackTree$InsertResult.<init>
+< cd/RedBlackTree$InsertResult.<init> (44969 ns)
+> cd/RedBlackTree.treeInsert
+< cd/RedBlackTree.treeInsert (26739002 ns)
+> cd/RedBlackTree$Node.access$302
+< cd/RedBlackTree$Node.access$302 (9384 ns)
+> cd/RedBlackTree.put
+< cd/RedBlackTree.put (26866814 ns)
+> cd/RedBlackTree$Node.<init>
+< cd/RedBlackTree$Node.<init> (7521 ns)
+> cd/RedBlackTree$Node.access$202
+< cd/RedBlackTree$Node.access$202 (6970 ns)
+> cd/RedBlackTree$InsertResult.<init>
+< cd/RedBlackTree$InsertResult.<init> (6953 ns)
+> cd/RedBlackTree.treeInsert
+< cd/RedBlackTree.treeInsert (162748 ns)
+> cd/RedBlackTree$Node.access$302
+< cd/RedBlackTree$Node.access$302 (6807 ns)
+> cd/RedBlackTree.put
+< cd/RedBlackTree.put (282767 ns)
+> cd/Motion.<init>
+< cd/Motion.<init> (67802 ns)
+> som/Vector.append
+< som/Vector.append (6331 ns)
+> cd/CollisionDetector.lambda$handleNewFrame$0
+< cd/CollisionDetector.lambda$handleNewFrame$0 (32525789 ns)
+> cd/CollisionDetector$$Lambda$1.apply
+< cd/CollisionDetector$$Lambda$1.apply (32585332 ns)
+> cd/RedBlackTree$Node.access$700
+< cd/RedBlackTree$Node.access$700 (8714 ns)
+> cd/RedBlackTree.treeInsert
+< cd/RedBlackTree.treeInsert (102529 ns)
+> cd/RedBlackTree.put
+< cd/RedBlackTree.put (151282 ns)
+> cd/CollisionDetector.lambda$handleNewFrame$0
+< cd/CollisionDetector.lambda$handleNewFrame$0 (205620 ns)
+> cd/CollisionDetector$$Lambda$1.apply
+< cd/CollisionDetector$$Lambda$1.apply (271413 ns)
+> som/Vector.forEach
+< som/Vector.forEach (33072530 ns)
+> cd/CollisionDetector.handleNewFrame
+< cd/CollisionDetector.handleNewFrame (238412827 ns)
+> CD.benchmark
+< CD.benchmark (359490597 ns)
+> CD.innerBenchmarkLoop
+< CD.innerBenchmarkLoop (359581172 ns)
+> Run.measure
+< Run.measure (359741064 ns)
+> Run.doRuns
+< Run.doRuns (360824607 ns)
+> Run.runBenchmark
+< Run.runBenchmark (363931621 ns)
+> Harness.main
+< Harness.main (467912853 ns)

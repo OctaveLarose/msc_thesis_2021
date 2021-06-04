@@ -1,0 +1,34 @@
+> Run.getSuiteFromName
+< Run.getSuiteFromName (13335147 ns)
+> Run.<init>
+< Run.<init> (14208551 ns)
+> Run.setNumIterations
+< Run.setNumIterations (22102 ns)
+> Harness.processArguments
+< Harness.processArguments (31725794 ns)
+> Benchmark.<init>
+< Benchmark.<init> (24467 ns)
+> Sieve.<init>
+< Sieve.<init> (121064 ns)
+> Sieve.sieve
+< Sieve.sieve (408776 ns)
+> Sieve.benchmark
+< Sieve.benchmark (622851 ns)
+> Sieve.verifyResult
+< Sieve.verifyResult (14424 ns)
+> Benchmark.innerBenchmarkLoop
+< Benchmark.innerBenchmarkLoop (752951 ns)
+> Run.printResult
+< Run.printResult (213437 ns)
+> Run.measure
+< Run.measure (1085760 ns)
+> Run.doRuns
+< Run.doRuns (1161129 ns)
+> Run.reportBenchmark
+< Run.reportBenchmark (176453 ns)
+> Run.runBenchmark
+< Run.runBenchmark (2030429 ns)
+> Run.printTotal
+< Run.printTotal (112189 ns)
+> Harness.main
+< Harness.main (34152231 ns)
