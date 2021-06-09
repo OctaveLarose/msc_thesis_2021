@@ -19,7 +19,7 @@ def write_content_to_file(content, filename):
 
 
 def main():
-    folder_name = "../output_data/disl_data/disl_awfy_local_vars_nbr"
+    folder_name = "../output_data/disl_data/disl_awfy_loops_nbr"
 
     for filename in os.listdir(folder_name):
         filepath = os.path.join(folder_name, filename)
