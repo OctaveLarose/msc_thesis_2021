@@ -1,0 +1,16 @@
+Run.getSuiteFromName 1
+Run.<init> 1
+Run.setNumIterations 1
+Harness.processArguments 1
+Benchmark.<init> 0
+Mandelbrot.<init> 0
+Mandelbrot.mandelbrot 21
+Mandelbrot.verifyResult 2
+Mandelbrot.innerBenchmarkLoop 1
+Run.printResult 2
+Run.measure 7
+Run.doRuns 2
+Run.reportBenchmark 0
+Run.runBenchmark 1
+Run.printTotal 0
+Harness.main 1
