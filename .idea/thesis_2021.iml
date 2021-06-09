@@ -6,8 +6,9 @@
       <excludeFolder url="file://$MODULE_DIR$/output_data" />
       <excludeFolder url="file://$MODULE_DIR$/input_data" />
       <excludeFolder url="file://$MODULE_DIR$/notes" />
+      <excludeFolder url="file://$MODULE_DIR$/code_generator" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (msc_thesis_2021)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
