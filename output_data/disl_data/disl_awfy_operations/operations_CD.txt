@@ -1,0 +1,94 @@
+Run.getSuiteFromName
+none
+Run.<init>
+none
+Run.setNumIterations
+none
+Harness.processArguments
+none
+Benchmark.<init>
+none
+CD.<init>
+none
+som/Vector.<init>
+none
+cd/CallSign.<init>
+none
+som/Vector.append
+IMUL IADD 
+cd/Simulator.<init>
+none
+cd/Vector2D.<init>
+none
+cd/CollisionDetector.<clinit>
+none
+cd/RedBlackTree.<init>
+none
+cd/CollisionDetector.<init>
+none
+som/Vector.size
+ISUB 
+som/Vector.at
+none
+cd/Vector3D.<init>
+none
+cd/Aircraft.<init>
+none
+cd/Simulator.simulate
+DMUL IMUL DADD IADD DMUL IMUL DADD 
+cd/CollisionDetector$$Lambda$1.<init>
+none
+cd/CollisionDetector$$Lambda$1.get$Lambda
+none
+cd/RedBlackTree$Color.<init>
+none
+cd/RedBlackTree$Color.<clinit>
+none
+cd/RedBlackTree$Node.<init>
+none
+cd/RedBlackTree$Node.access$202
+none
+cd/RedBlackTree$InsertResult.<init>
+none
+cd/RedBlackTree.treeInsert
+none
+cd/RedBlackTree$Node.access$302
+none
+cd/RedBlackTree.put
+none
+cd/Motion.<init>
+none
+cd/CollisionDetector.lambda$handleNewFrame$0
+none
+cd/CollisionDetector$$Lambda$1.apply
+none
+cd/RedBlackTree$Node.access$700
+none
+som/Vector.forEach
+none
+cd/CollisionDetector.handleNewFrame
+none
+CD.benchmark
+DDIV IADD 
+CD.innerBenchmarkLoop
+none
+Run.measure
+LSUB LDIV LADD 
+Run.doRuns
+none
+Run.runBenchmark
+none
+Harness.main
+none
+Exception in thread "main" java.lang.NullPointerException
+	at cd.RedBlackTree.treeInsert(Unknown Source)
+	at cd.RedBlackTree.put(Unknown Source)
+	at cd.CollisionDetector.lambda$handleNewFrame$0(Unknown Source)
+	at som.Vector.forEach(Unknown Source)
+	at cd.CollisionDetector.handleNewFrame(Unknown Source)
+	at CD.benchmark(Unknown Source)
+	at CD.innerBenchmarkLoop(Unknown Source)
+	at Run.measure(Unknown Source)
+	at Run.doRuns(Unknown Source)
+	at Run.runBenchmark(Unknown Source)
+	at Harness.main(Unknown Source)
