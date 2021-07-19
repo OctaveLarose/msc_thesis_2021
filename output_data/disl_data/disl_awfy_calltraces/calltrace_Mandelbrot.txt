@@ -1,32 +1,32 @@
-> Run.getSuiteFromName
-< Run.getSuiteFromName (22498070 ns)
-> Run.<init>
-< Run.<init> (23406696 ns)
-> Run.setNumIterations
-< Run.setNumIterations (15624 ns)
-> Harness.processArguments
-< Harness.processArguments (39840668 ns)
-> Benchmark.<init>
-< Benchmark.<init> (24080 ns)
-> Mandelbrot.<init>
-< Mandelbrot.<init> (136625 ns)
-> Mandelbrot.mandelbrot
-< Mandelbrot.mandelbrot (12183 ns)
-> Mandelbrot.verifyResult
-< Mandelbrot.verifyResult (12253 ns)
-> Mandelbrot.innerBenchmarkLoop
-< Mandelbrot.innerBenchmarkLoop (137606 ns)
-> Run.printResult
-< Run.printResult (57531 ns)
-> Run.measure
-< Run.measure (307132 ns)
-> Run.doRuns
-< Run.doRuns (368878 ns)
-> Run.reportBenchmark
-< Run.reportBenchmark (63234 ns)
-> Run.runBenchmark
-< Run.runBenchmark (952362 ns)
-> Run.printTotal
-< Run.printTotal (47809 ns)
-> Harness.main
-< Harness.main (41112484 ns)
+> pub/sta ([Ljava/lang/String;)V Harness.main
+> pri/sta ([Ljava/lang/String;)LRun; Harness.processArguments
+> pub/con (Ljava/lang/String;)V Run.<init>
+> pri/sta (Ljava/lang/String;)Ljava/lang/Class; Run.getSuiteFromName
+< pri/sta (Ljava/lang/String;)Ljava/lang/Class; Run.getSuiteFromName (139715517ns)
+< pub/con (Ljava/lang/String;)V Run.<init> (141135378ns)
+> pub (I)V Run.setNumIterations
+< pub (I)V Run.setNumIterations (39866ns)
+< pri/sta ([Ljava/lang/String;)LRun; Harness.processArguments (277671449ns)
+> pub ()V Run.runBenchmark
+> con ()V Mandelbrot.<init>
+> pub/con ()V Benchmark.<init>
+< pub/con ()V Benchmark.<init> (88194ns)
+< con ()V Mandelbrot.<init> (1218161ns)
+> pri (LBenchmark;)V Run.doRuns
+> pri (LBenchmark;)V Run.measure
+> pub (I)Z Mandelbrot.innerBenchmarkLoop
+> pri (I)I Mandelbrot.mandelbrot
+< pri (I)I Mandelbrot.mandelbrot (231262ns)
+> pri (II)Z Mandelbrot.verifyResult
+< pri (II)Z Mandelbrot.verifyResult (39034ns)
+< pub (I)Z Mandelbrot.innerBenchmarkLoop (494058ns)
+> pri (J)V Run.printResult
+< pri (J)V Run.printResult (1061280ns)
+< pri (LBenchmark;)V Run.measure (1968001ns)
+< pri (LBenchmark;)V Run.doRuns (3503820ns)
+> pri ()V Run.reportBenchmark
+< pri ()V Run.reportBenchmark (4621214ns)
+< pub ()V Run.runBenchmark (15559286ns)
+> pub ()V Run.printTotal
+< pub ()V Run.printTotal (651724ns)
+< pub/sta ([Ljava/lang/String;)V Harness.main (295037647ns)

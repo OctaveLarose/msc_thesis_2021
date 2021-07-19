@@ -1,920 +1,920 @@
-> Run.getSuiteFromName
-< Run.getSuiteFromName (39762552 ns)
-> Run.<init>
-< Run.<init> (41198760 ns)
-> Run.setNumIterations
-< Run.setNumIterations (51336 ns)
-> Harness.processArguments
-< Harness.processArguments (62782274 ns)
-> Benchmark.<init>
-< Benchmark.<init> (40548 ns)
-> NBody.<init>
-< NBody.<init> (161700 ns)
-> nbody/Body.<init>
-< nbody/Body.<init> (32071 ns)
-> nbody/Body.sun
-< nbody/Body.sun (181559 ns)
-> nbody/Body.<init>
-< nbody/Body.<init> (10187 ns)
-> nbody/Body.jupiter
-< nbody/Body.jupiter (75007 ns)
-> nbody/Body.<init>
-< nbody/Body.<init> (13022 ns)
-> nbody/Body.saturn
-< nbody/Body.saturn (79882 ns)
-> nbody/Body.<init>
-< nbody/Body.<init> (13672 ns)
-> nbody/Body.uranus
-< nbody/Body.uranus (73085 ns)
-> nbody/Body.<init>
-< nbody/Body.<init> (15570 ns)
-> nbody/Body.neptune
-< nbody/Body.neptune (73355 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (28823 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (11849 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (10569 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (11685 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (12911 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (11204 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (11733 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (14913 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8811 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8385 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (9406 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8138 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (9676 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8274 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8123 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (9673 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (8415 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (39437 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (9760 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8153 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8118 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (18251 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (9621 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8268 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (8239 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8129 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8311 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (7673 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (16429 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8656 ns)
-> nbody/Body.offsetMomentum
-< nbody/Body.offsetMomentum (13359 ns)
-> nbody/NBodySystem.createBodies
-< nbody/NBodySystem.createBodies (31859827 ns)
-> nbody/NBodySystem.<init>
-< nbody/NBodySystem.<init> (31990583 ns)
-> nbody/Body.getX
-< nbody/Body.getX (11373 ns)
-> nbody/Body.getX
-< nbody/Body.getX (8788 ns)
-> nbody/Body.getY
-< nbody/Body.getY (9938 ns)
-> nbody/Body.getY
-< nbody/Body.getY (10261 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (11446 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (8437 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (9861 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8492 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (10609 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8807 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10371 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (17016 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (9033 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (9267 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (11007 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (9338 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10575 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (9245 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (9380 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10956 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (9114 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (9518 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10807 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (25228 ns)
-> nbody/Body.getX
-< nbody/Body.getX (8564 ns)
-> nbody/Body.getX
-< nbody/Body.getX (7904 ns)
-> nbody/Body.getY
-< nbody/Body.getY (8235 ns)
-> nbody/Body.getY
-< nbody/Body.getY (9355 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (8382 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (8184 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (14883 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8898 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (9517 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8658 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (9884 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (8894 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (9197 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8403 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (8571 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (8642 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8628 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (10463 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (8598 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (9338 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (10017 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (8650 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (9695 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (13358 ns)
-> nbody/Body.getX
-< nbody/Body.getX (8972 ns)
-> nbody/Body.getX
-< nbody/Body.getX (9291 ns)
-> nbody/Body.getY
-< nbody/Body.getY (8646 ns)
-> nbody/Body.getY
-< nbody/Body.getY (8540 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (8515 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (8453 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (8734 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8572 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (11144 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (9079 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8835 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (10013 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (8921 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8874 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (10151 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (10866 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10474 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (9045 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (10930 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (11508 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (9455 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (11560 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10255 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (9274 ns)
-> nbody/Body.getX
-< nbody/Body.getX (9490 ns)
-> nbody/Body.getX
-< nbody/Body.getX (9146 ns)
-> nbody/Body.getY
-< nbody/Body.getY (9827 ns)
-> nbody/Body.getY
-< nbody/Body.getY (9898 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (32689 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (9312 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (9148 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (42959 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (9500 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (6920 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (8391 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (6896 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (6933 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6835 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (6530 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (6812 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6810 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (10965 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (7637 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (7412 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (5773 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (5885 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (7959 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (6007 ns)
-> nbody/Body.getX
-< nbody/Body.getX (7215 ns)
-> nbody/Body.getX
-< nbody/Body.getX (6652 ns)
-> nbody/Body.getY
-< nbody/Body.getY (8255 ns)
-> nbody/Body.getY
-< nbody/Body.getY (6405 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (7199 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (6802 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (7341 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6564 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (6339 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (9534 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6362 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (9802 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (5763 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5510 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (7337 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (5543 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5648 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (7161 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (5636 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5720 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (5315 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (31545 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (67029 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (6455 ns)
-> nbody/Body.getX
-< nbody/Body.getX (6063 ns)
-> nbody/Body.getX
-< nbody/Body.getX (5512 ns)
-> nbody/Body.getY
-< nbody/Body.getY (5746 ns)
-> nbody/Body.getY
-< nbody/Body.getY (5342 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (5320 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (13978 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (25602 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5613 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (26003 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (6983 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6043 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (44261 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (8472 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5217 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (10049 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (9180 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6489 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (6877 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (7172 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (15187 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (10069 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (36286 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (25059 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (8619 ns)
-> nbody/Body.getX
-< nbody/Body.getX (7823 ns)
-> nbody/Body.getX
-< nbody/Body.getX (8318 ns)
-> nbody/Body.getY
-< nbody/Body.getY (8032 ns)
-> nbody/Body.getY
-< nbody/Body.getY (8155 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (7262 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (8249 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (7578 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (30060 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (8855 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (13468 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (11270 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (16932 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (9471 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10366 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (7407 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (6744 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (10102 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (8497 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (9541 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6131 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (5679 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (5921 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5326 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (4273 ns)
-> nbody/Body.getX
-< nbody/Body.getX (4197 ns)
-> nbody/Body.getX
-< nbody/Body.getX (4327 ns)
-> nbody/Body.getY
-< nbody/Body.getY (7316 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3991 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3990 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3792 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (4045 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (4163 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (3877 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (7905 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3966 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (4071 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (5582 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3815 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (3924 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (5239 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3612 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (3753 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (4129 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3694 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (4198 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (4392 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3842 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (3883 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3798 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3732 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3856 ns)
-> nbody/Body.getY
-< nbody/Body.getY (6388 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3591 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (4126 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3482 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5167 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (3588 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (4467 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (5130 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (10093 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (4501 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (11365 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (4061 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3631 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (4901 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (3734 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (3582 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (13635 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (3643 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (3430 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3145 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (3145 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3268 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3145 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3066 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3156 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3166 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3188 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3272 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3189 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (4718 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (3256 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3066 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (4590 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (3269 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3265 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (4818 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (2712 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2821 ns)
-> nbody/Body.setVX
-< nbody/Body.setVX (2940 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (6293 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2913 ns)
-> nbody/Body.setVY
-< nbody/Body.setVY (2935 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (3104 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3407 ns)
-> nbody/Body.setVZ
-< nbody/Body.setVZ (2978 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2972 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3115 ns)
-> nbody/Body.setX
-< nbody/Body.setX (11117 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3020 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (3897 ns)
-> nbody/Body.setY
-< nbody/Body.setY (4982 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3238 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (3405 ns)
-> nbody/Body.setZ
-< nbody/Body.setZ (4948 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3412 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3382 ns)
-> nbody/Body.setX
-< nbody/Body.setX (3172 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3343 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (5149 ns)
-> nbody/Body.setY
-< nbody/Body.setY (3257 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (4985 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (5322 ns)
-> nbody/Body.setZ
-< nbody/Body.setZ (2942 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2595 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (4292 ns)
-> nbody/Body.setX
-< nbody/Body.setX (2638 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3314 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (2805 ns)
-> nbody/Body.setY
-< nbody/Body.setY (2507 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2560 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (2739 ns)
-> nbody/Body.setZ
-< nbody/Body.setZ (2401 ns)
-> nbody/Body.getX
-< nbody/Body.getX (22117 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (2734 ns)
-> nbody/Body.setX
-< nbody/Body.setX (2578 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2464 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (2370 ns)
-> nbody/Body.setY
-< nbody/Body.setY (3788 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2331 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (2494 ns)
-> nbody/Body.setZ
-< nbody/Body.setZ (4161 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2398 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (2330 ns)
-> nbody/Body.setX
-< nbody/Body.setX (4043 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2468 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (2348 ns)
-> nbody/Body.setY
-< nbody/Body.setY (2180 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2698 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (2423 ns)
-> nbody/Body.setZ
-< nbody/Body.setZ (4916 ns)
-> nbody/NBodySystem.advance
-< nbody/NBodySystem.advance (18248050 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2719 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (2463 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (19143 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (2829 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (2384 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (2303 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (3533 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2192 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2805 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2202 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1981 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3488 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2225 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2820 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (7693 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2070 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2045 ns)
-> nbody/Body.getY
-< nbody/Body.getY (5867 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2180 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3261 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3103 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6254 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3137 ns)
-> nbody/Body.getX
-< nbody/Body.getX (6365 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2655 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2548 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2023 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2158 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2435 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (7347 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2373 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2844 ns)
-> nbody/Body.getX
-< nbody/Body.getX (7273 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2779 ns)
-> nbody/Body.getY
-< nbody/Body.getY (3319 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (4877 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (7564 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (6176 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2775 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1872 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3451 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (1855 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (1884 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (3553 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (2057 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (1726 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1883 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1755 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1742 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1807 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1736 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1831 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2037 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1775 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1876 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1731 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2752 ns)
-> nbody/Body.getY
-< nbody/Body.getY (2849 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2583 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (3867 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1990 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (2168 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3332 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1827 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1883 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1647 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1694 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1693 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1852 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1805 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1772 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (1763 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (1821 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (1818 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (1765 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (1826 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (1926 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1949 ns)
-> nbody/Body.getX
-< nbody/Body.getX (3344 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1826 ns)
-> nbody/Body.getY
-< nbody/Body.getY (146291 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (5766 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (2304 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (125782 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3830 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2172 ns)
-> nbody/Body.getX
-< nbody/Body.getX (2097 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1997 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1981 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1810 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1937 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3389 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1934 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1848 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (7641 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (1838 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (1863 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (2929 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (2012 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (1870 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1911 ns)
-> nbody/Body.getX
-< nbody/Body.getX (1780 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1855 ns)
-> nbody/Body.getY
-< nbody/Body.getY (1804 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1858 ns)
-> nbody/Body.getZ
-< nbody/Body.getZ (1809 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1897 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (3169 ns)
-> nbody/Body.getMass
-< nbody/Body.getMass (1890 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (1904 ns)
-> nbody/Body.getVX
-< nbody/Body.getVX (3467 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (1728 ns)
-> nbody/Body.getVY
-< nbody/Body.getVY (1906 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (3329 ns)
-> nbody/Body.getVZ
-< nbody/Body.getVZ (1884 ns)
-> nbody/NBodySystem.energy
-< nbody/NBodySystem.energy (9264482 ns)
-> NBody.verifyResult
-< NBody.verifyResult (6627 ns)
-> NBody.innerBenchmarkLoop
-< NBody.innerBenchmarkLoop (109622187 ns)
-> Run.printResult
-< Run.printResult (162115 ns)
-> Run.measure
-< Run.measure (109878995 ns)
-> Run.doRuns
-< Run.doRuns (109956089 ns)
-> Run.reportBenchmark
-< Run.reportBenchmark (43384 ns)
-> Run.runBenchmark
-< Run.runBenchmark (110700708 ns)
-> Run.printTotal
-< Run.printTotal (23954 ns)
-> Harness.main
-< Harness.main (173775852 ns)
+> pub/sta ([Ljava/lang/String;)V Harness.main
+> pri/sta ([Ljava/lang/String;)LRun; Harness.processArguments
+> pub/con (Ljava/lang/String;)V Run.<init>
+> pri/sta (Ljava/lang/String;)Ljava/lang/Class; Run.getSuiteFromName
+< pri/sta (Ljava/lang/String;)Ljava/lang/Class; Run.getSuiteFromName (25998358ns)
+< pub/con (Ljava/lang/String;)V Run.<init> (26913422ns)
+> pub (I)V Run.setNumIterations
+< pub (I)V Run.setNumIterations (33588ns)
+< pri/sta ([Ljava/lang/String;)LRun; Harness.processArguments (70910288ns)
+> pub ()V Run.runBenchmark
+> pub/con ()V NBody.<init>
+> pub/con ()V Benchmark.<init>
+< pub/con ()V Benchmark.<init> (43506ns)
+< pub/con ()V NBody.<init> (195864ns)
+> pri (LBenchmark;)V Run.doRuns
+> pri (LBenchmark;)V Run.measure
+> pub (I)Z NBody.innerBenchmarkLoop
+> pub/con ()V nbody/NBodySystem.<init>
+> pub ()[Lnbody/Body; nbody/NBodySystem.createBodies
+> sta ()Lnbody/Body; nbody/Body.sun
+> con (DDDDDDD)V nbody/Body.<init>
+< con (DDDDDDD)V nbody/Body.<init> (92791ns)
+< sta ()Lnbody/Body; nbody/Body.sun (324155ns)
+> sta ()Lnbody/Body; nbody/Body.jupiter
+> con (DDDDDDD)V nbody/Body.<init>
+< con (DDDDDDD)V nbody/Body.<init> (67049ns)
+< sta ()Lnbody/Body; nbody/Body.jupiter (521898ns)
+> sta ()Lnbody/Body; nbody/Body.saturn
+> con (DDDDDDD)V nbody/Body.<init>
+< con (DDDDDDD)V nbody/Body.<init> (145706ns)
+< sta ()Lnbody/Body; nbody/Body.saturn (613310ns)
+> sta ()Lnbody/Body; nbody/Body.uranus
+> con (DDDDDDD)V nbody/Body.<init>
+< con (DDDDDDD)V nbody/Body.<init> (30162ns)
+< sta ()Lnbody/Body; nbody/Body.uranus (232845ns)
+> sta ()Lnbody/Body; nbody/Body.neptune
+> con (DDDDDDD)V nbody/Body.<init>
+< con (DDDDDDD)V nbody/Body.<init> (87582ns)
+< sta ()Lnbody/Body; nbody/Body.neptune (1076881ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (238480ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (62304ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (166043ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (1126185ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (193072ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (103566ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (25790ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (19994ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (38554ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (412228ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (30396ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (20990ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (22058ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (17205ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (20320ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (34613ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (16427ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (16060ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (15629ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (21143ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (14405ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (13822ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (46935ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (17491ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (13179ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (12574ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (12981ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (12626ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (12328ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (12617ns)
+> ? (DDD)V nbody/Body.offsetMomentum
+< ? (DDD)V nbody/Body.offsetMomentum (21013ns)
+< pub ()[Lnbody/Body; nbody/NBodySystem.createBodies (178655186ns)
+< pub/con ()V nbody/NBodySystem.<init> (178865420ns)
+> pub (D)V nbody/NBodySystem.advance
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (307868ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (14956ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (17170ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (272094ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (30391ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (12686ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (51735ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (13815ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (18940ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (12010ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (14183ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (17941ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (11886ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (13705ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (16478ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (11298ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (10837ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (11097ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (11942ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (10193ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (10999ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (10581ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (11535ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (10458ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (3329230ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (70843ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (22976ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (267969ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (89869ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (177590ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (18007ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (13610ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (13858ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (65575ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (101665ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (265181ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (137730ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (89711ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (65405ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (49518ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (15808ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (13418ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (12635ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (453073ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (16141ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (14612ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (11591ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (26615ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (11241ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (11915ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (11309ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (11438ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (11137ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (12865ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (48655ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (11009ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (16464ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (12673ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (10983ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (12165ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (92925ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (34366ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (42662ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (22898ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (15230ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (367993ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (29867ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (17871ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (16216ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (49595ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (17877ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (12481ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (20891ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (37240ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (310119ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (409481ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (51154ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (13753ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (10757ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9691ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (10073ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (9428ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (10584ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (10767ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (10389ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (11354ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (9938ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (25935ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9628ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (9320ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (10595ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (14566ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (116018ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (227066ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (22206ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (11371ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (18745ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (13465ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (12619ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (10760ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (11506ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (33588ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (13986ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (46760ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (12552ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (13720ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6893ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (8997ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6011ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5870ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (7289ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (5975ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5784ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (5898ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (5737ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (12327ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (9995ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (9210ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (10372ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (8885ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6371ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (5514ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (5443ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (5380ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (20635ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (5376ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (6904ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5409ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (5499ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (7058ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5345ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (5471ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (5274ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5871ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (5322ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (5563ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5438ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (10899ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (22170ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (18943ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (10115ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (9373ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9765ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (10302ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (10367ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (11822ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (10523ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (9865ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (9150ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (9689ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (9464ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9187ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (10126ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (10512ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8787ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (8996ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (9194ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (14628ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (9703ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8622ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8737ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (11019ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (9370ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9085ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (10126ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (14370ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9052ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (11076ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (9631ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (9731ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (9578ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (8558ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (8417ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (152417ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (53279ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (50237ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (12694ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (16269ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (14272ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (8534ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7854ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7607ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (7615ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (110621ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (80528ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (166767ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (11416ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9564ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (8938ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7562ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7358ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (8891ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (82243ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (73126ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (32642ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (32636ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (9022ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (125923ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (38701ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (58968ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (182559ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (41739ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (63254ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (10593ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (9033ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (184979ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (13134ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (11192ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8431ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (8481ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (9858ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7135ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (8518ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7963ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7456ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (7154ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7595ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6914ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (9072ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7447ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7056ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (14342ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (50604ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (44668ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (85862ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (75278ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (18619ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (19055ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (12452ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8686ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (8069ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8164ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (11863ns)
+> pub (D)V nbody/Body.setVX
+< pub (D)V nbody/Body.setVX (7608ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (7282ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9291ns)
+> pub (D)V nbody/Body.setVY
+< pub (D)V nbody/Body.setVY (6986ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7628ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8534ns)
+> pub (D)V nbody/Body.setVZ
+< pub (D)V nbody/Body.setVZ (10659ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (11915ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (7769ns)
+> pub (D)V nbody/Body.setX
+< pub (D)V nbody/Body.setX (16420ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7813ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (7366ns)
+> pub (D)V nbody/Body.setY
+< pub (D)V nbody/Body.setY (16367ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7984ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7380ns)
+> pub (D)V nbody/Body.setZ
+< pub (D)V nbody/Body.setZ (13316ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (4904ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (4773ns)
+> pub (D)V nbody/Body.setX
+< pub (D)V nbody/Body.setX (4713ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (4632ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (4775ns)
+> pub (D)V nbody/Body.setY
+< pub (D)V nbody/Body.setY (4816ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (4647ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (13158ns)
+> pub (D)V nbody/Body.setZ
+< pub (D)V nbody/Body.setZ (4712ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (4682ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (4747ns)
+> pub (D)V nbody/Body.setX
+< pub (D)V nbody/Body.setX (4634ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (4634ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (4823ns)
+> pub (D)V nbody/Body.setY
+< pub (D)V nbody/Body.setY (4676ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6014ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (4567ns)
+> pub (D)V nbody/Body.setZ
+< pub (D)V nbody/Body.setZ (4643ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (4706ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (4582ns)
+> pub (D)V nbody/Body.setX
+< pub (D)V nbody/Body.setX (4608ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (4689ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (7640ns)
+> pub (D)V nbody/Body.setY
+< pub (D)V nbody/Body.setY (8449ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7908ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (8930ns)
+> pub (D)V nbody/Body.setZ
+< pub (D)V nbody/Body.setZ (9701ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (8423ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8467ns)
+> pub (D)V nbody/Body.setX
+< pub (D)V nbody/Body.setX (8014ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (8153ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (8191ns)
+> pub (D)V nbody/Body.setY
+< pub (D)V nbody/Body.setY (7078ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6764ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (9484ns)
+> pub (D)V nbody/Body.setZ
+< pub (D)V nbody/Body.setZ (8356ns)
+< pub (D)V nbody/NBodySystem.advance (64008497ns)
+> pub ()D nbody/NBodySystem.energy
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6926ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8727ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8817ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (6909ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (6586ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6609ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6745ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6969ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6987ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7039ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (6969ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (9031ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7143ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7358ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6656ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6850ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (8526ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (8803ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7334ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (9284ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6745ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7873ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (10530ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (72548ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7541ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (6814ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7074ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7661ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7518ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7831ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9554ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7499ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7386ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (8161ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7384ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (16936ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (8594ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7592ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (9337ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8419ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8081ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (9366ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (7374ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (6612ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7409ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6848ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (10239ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7422ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7455ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (9731ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6947ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6375ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7061ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7904ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7440ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (7535ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7810ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (9225ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7631ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7656ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7917ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7329ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (8989ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6997ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7929ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (9459ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (8935ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7415ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7030ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (7173ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6434ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (6636ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (6898ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (10874ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (6886ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7104ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6973ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6812ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6650ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (10421ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7290ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (7038ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (10389ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6598ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6654ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6060ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (6049ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (7394ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (5947ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (5789ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6107ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5675ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5614ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (5587ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (9111ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (8774ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (5929ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (6485ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6861ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (5817ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (24426ns)
+> pub ()D nbody/Body.getX
+< pub ()D nbody/Body.getX (5889ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (6330ns)
+> pub ()D nbody/Body.getY
+< pub ()D nbody/Body.getY (8180ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6250ns)
+> pub ()D nbody/Body.getZ
+< pub ()D nbody/Body.getZ (6666ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (8159ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6175ns)
+> pub ()D nbody/Body.getMass
+< pub ()D nbody/Body.getMass (6344ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (5697ns)
+> pub ()D nbody/Body.getVX
+< pub ()D nbody/Body.getVX (5622ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (6400ns)
+> pub ()D nbody/Body.getVY
+< pub ()D nbody/Body.getVY (5566ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (6993ns)
+> pub ()D nbody/Body.getVZ
+< pub ()D nbody/Body.getVZ (7869ns)
+< pub ()D nbody/NBodySystem.energy (4982273ns)
+> pri (DI)Z NBody.verifyResult
+< pri (DI)Z NBody.verifyResult (11391ns)
+< pub (I)Z NBody.innerBenchmarkLoop (346340588ns)
+> pri (J)V Run.printResult
+< pri (J)V Run.printResult (95072ns)
+< pri (LBenchmark;)V Run.measure (347955041ns)
+< pri (LBenchmark;)V Run.doRuns (348187385ns)
+> pri ()V Run.reportBenchmark
+< pri ()V Run.reportBenchmark (45185ns)
+< pub ()V Run.runBenchmark (349123326ns)
+> pub ()V Run.printTotal
+< pub ()V Run.printTotal (27800ns)
+< pub/sta ([Ljava/lang/String;)V Harness.main (420885966ns)

@@ -1,132 +1,132 @@
-> Run.getSuiteFromName
-< Run.getSuiteFromName (47157390 ns)
-> Run.<init>
-< Run.<init> (48683002 ns)
-> Run.setNumIterations
-< Run.setNumIterations (24041 ns)
-> Harness.processArguments
-< Harness.processArguments (103547625 ns)
-> Benchmark.<init>
-< Benchmark.<init> (184708 ns)
-> CD.<init>
-< CD.<init> (973094 ns)
-> som/Vector.<init>
-< som/Vector.<init> (19187 ns)
-> som/Vector.<init>
-< som/Vector.<init> (173859 ns)
-> cd/CallSign.<init>
-< cd/CallSign.<init> (48637 ns)
-> som/Vector.append
-< som/Vector.append (16295 ns)
-> cd/Simulator.<init>
-< cd/Simulator.<init> (36640081 ns)
-> cd/Vector2D.<init>
-< cd/Vector2D.<init> (44487 ns)
-> cd/Vector2D.<init>
-< cd/Vector2D.<init> (12360 ns)
-> cd/CollisionDetector.<clinit>
-< cd/CollisionDetector.<clinit> (7536730 ns)
-> cd/RedBlackTree.<init>
-< cd/RedBlackTree.<init> (52268 ns)
-> cd/CollisionDetector.<init>
-< cd/CollisionDetector.<init> (26096716 ns)
-> som/Vector.<init>
-< som/Vector.<init> (10517 ns)
-> som/Vector.<init>
-< som/Vector.<init> (74359 ns)
-> som/Vector.size
-< som/Vector.size (13546 ns)
-> som/Vector.at
-< som/Vector.at (33117 ns)
-> cd/Vector3D.<init>
-< cd/Vector3D.<init> (41719 ns)
-> cd/Aircraft.<init>
-< cd/Aircraft.<init> (25680 ns)
-> som/Vector.append
-< som/Vector.append (10005 ns)
-> som/Vector.at
-< som/Vector.at (8730 ns)
-> cd/Vector3D.<init>
-< cd/Vector3D.<init> (8226 ns)
-> cd/Aircraft.<init>
-< cd/Aircraft.<init> (20199 ns)
-> som/Vector.append
-< som/Vector.append (9597 ns)
-> som/Vector.size
-< som/Vector.size (8089 ns)
-> cd/Simulator.simulate
-< cd/Simulator.simulate (10138505 ns)
-> som/Vector.<init>
-< som/Vector.<init> (10303 ns)
-> som/Vector.<init>
-< som/Vector.<init> (60877 ns)
-> cd/RedBlackTree.<init>
-< cd/RedBlackTree.<init> (8283 ns)
-> cd/CollisionDetector$$Lambda$1.<init>
-< cd/CollisionDetector$$Lambda$1.<init> (24051 ns)
-> cd/CollisionDetector$$Lambda$1.get$Lambda
-< cd/CollisionDetector$$Lambda$1.get$Lambda (137887 ns)
-> cd/RedBlackTree$Color.<init>
-< cd/RedBlackTree$Color.<init> (16941 ns)
-> cd/RedBlackTree$Color.<init>
-< cd/RedBlackTree$Color.<init> (7915 ns)
-> cd/RedBlackTree$Color.<clinit>
-< cd/RedBlackTree$Color.<clinit> (257411 ns)
-> cd/RedBlackTree$Node.<init>
-< cd/RedBlackTree$Node.<init> (10989635 ns)
-> cd/RedBlackTree$Node.access$202
-< cd/RedBlackTree$Node.access$202 (9422 ns)
-> cd/RedBlackTree$InsertResult.<init>
-< cd/RedBlackTree$InsertResult.<init> (44969 ns)
-> cd/RedBlackTree.treeInsert
-< cd/RedBlackTree.treeInsert (26739002 ns)
-> cd/RedBlackTree$Node.access$302
-< cd/RedBlackTree$Node.access$302 (9384 ns)
-> cd/RedBlackTree.put
-< cd/RedBlackTree.put (26866814 ns)
-> cd/RedBlackTree$Node.<init>
-< cd/RedBlackTree$Node.<init> (7521 ns)
-> cd/RedBlackTree$Node.access$202
-< cd/RedBlackTree$Node.access$202 (6970 ns)
-> cd/RedBlackTree$InsertResult.<init>
-< cd/RedBlackTree$InsertResult.<init> (6953 ns)
-> cd/RedBlackTree.treeInsert
-< cd/RedBlackTree.treeInsert (162748 ns)
-> cd/RedBlackTree$Node.access$302
-< cd/RedBlackTree$Node.access$302 (6807 ns)
-> cd/RedBlackTree.put
-< cd/RedBlackTree.put (282767 ns)
-> cd/Motion.<init>
-< cd/Motion.<init> (67802 ns)
-> som/Vector.append
-< som/Vector.append (6331 ns)
-> cd/CollisionDetector.lambda$handleNewFrame$0
-< cd/CollisionDetector.lambda$handleNewFrame$0 (32525789 ns)
-> cd/CollisionDetector$$Lambda$1.apply
-< cd/CollisionDetector$$Lambda$1.apply (32585332 ns)
-> cd/RedBlackTree$Node.access$700
-< cd/RedBlackTree$Node.access$700 (8714 ns)
-> cd/RedBlackTree.treeInsert
-< cd/RedBlackTree.treeInsert (102529 ns)
-> cd/RedBlackTree.put
-< cd/RedBlackTree.put (151282 ns)
-> cd/CollisionDetector.lambda$handleNewFrame$0
-< cd/CollisionDetector.lambda$handleNewFrame$0 (205620 ns)
-> cd/CollisionDetector$$Lambda$1.apply
-< cd/CollisionDetector$$Lambda$1.apply (271413 ns)
-> som/Vector.forEach
-< som/Vector.forEach (33072530 ns)
-> cd/CollisionDetector.handleNewFrame
-< cd/CollisionDetector.handleNewFrame (238412827 ns)
-> CD.benchmark
-< CD.benchmark (359490597 ns)
-> CD.innerBenchmarkLoop
-< CD.innerBenchmarkLoop (359581172 ns)
-> Run.measure
-< Run.measure (359741064 ns)
-> Run.doRuns
-< Run.doRuns (360824607 ns)
-> Run.runBenchmark
-< Run.runBenchmark (363931621 ns)
-> Harness.main
-< Harness.main (467912853 ns)
+> pub/sta ([Ljava/lang/String;)V Harness.main
+> pri/sta ([Ljava/lang/String;)LRun; Harness.processArguments
+> pub/con (Ljava/lang/String;)V Run.<init>
+> pri/sta (Ljava/lang/String;)Ljava/lang/Class; Run.getSuiteFromName
+< pri/sta (Ljava/lang/String;)Ljava/lang/Class; Run.getSuiteFromName (49435452ns)
+< pub/con (Ljava/lang/String;)V Run.<init> (54814608ns)
+> pub (I)V Run.setNumIterations
+< pub (I)V Run.setNumIterations (33678ns)
+< pri/sta ([Ljava/lang/String;)LRun; Harness.processArguments (135129705ns)
+> pub ()V Run.runBenchmark
+> pub/con ()V CD.<init>
+> pub/con ()V Benchmark.<init>
+< pub/con ()V Benchmark.<init> (48396ns)
+< pub/con ()V CD.<init> (275636ns)
+> pri (LBenchmark;)V Run.doRuns
+> pri (LBenchmark;)V Run.measure
+> pub (I)Z CD.innerBenchmarkLoop
+> pri (I)I CD.benchmark
+> pub/con (I)V cd/Simulator.<init>
+> pub/con ()V som/Vector.<init>
+> pub/con (I)V som/Vector.<init>
+< pub/con (I)V som/Vector.<init> (43048ns)
+< pub/con ()V som/Vector.<init> (347303ns)
+> pub/con (I)V cd/CallSign.<init>
+< pub/con (I)V cd/CallSign.<init> (81554ns)
+> pub (Ljava/lang/Object;)V som/Vector.append
+< pub (Ljava/lang/Object;)V som/Vector.append (160270ns)
+< pub/con (I)V cd/Simulator.<init> (156111480ns)
+> sta ()V cd/CollisionDetector.<clinit>
+> pub/con (DD)V cd/Vector2D.<init>
+< pub/con (DD)V cd/Vector2D.<init> (73188ns)
+> pub/con (DD)V cd/Vector2D.<init>
+< pub/con (DD)V cd/Vector2D.<init> (19910ns)
+< sta ()V cd/CollisionDetector.<clinit> (22275818ns)
+> pub/con ()V cd/CollisionDetector.<init>
+> pub/con ()V cd/RedBlackTree.<init>
+< pub/con ()V cd/RedBlackTree.<init> (138146ns)
+< pub/con ()V cd/CollisionDetector.<init> (59128374ns)
+> pub (D)Lsom/Vector; cd/Simulator.simulate
+> pub/con ()V som/Vector.<init>
+> pub/con (I)V som/Vector.<init>
+< pub/con (I)V som/Vector.<init> (25926ns)
+< pub/con ()V som/Vector.<init> (129264ns)
+> pub ()I som/Vector.size
+< pub ()I som/Vector.size (44655ns)
+> pub (I)Ljava/lang/Object; som/Vector.at
+< pub (I)Ljava/lang/Object; som/Vector.at (98535ns)
+> pub/con (DDD)V cd/Vector3D.<init>
+< pub/con (DDD)V cd/Vector3D.<init> (103051ns)
+> pub/con (Lcd/CallSign;Lcd/Vector3D;)V cd/Aircraft.<init>
+< pub/con (Lcd/CallSign;Lcd/Vector3D;)V cd/Aircraft.<init> (44478ns)
+> pub (Ljava/lang/Object;)V som/Vector.append
+< pub (Ljava/lang/Object;)V som/Vector.append (20563ns)
+> pub (I)Ljava/lang/Object; som/Vector.at
+< pub (I)Ljava/lang/Object; som/Vector.at (18780ns)
+> pub/con (DDD)V cd/Vector3D.<init>
+< pub/con (DDD)V cd/Vector3D.<init> (25848ns)
+> pub/con (Lcd/CallSign;Lcd/Vector3D;)V cd/Aircraft.<init>
+< pub/con (Lcd/CallSign;Lcd/Vector3D;)V cd/Aircraft.<init> (54562ns)
+> pub (Ljava/lang/Object;)V som/Vector.append
+< pub (Ljava/lang/Object;)V som/Vector.append (67467ns)
+> pub ()I som/Vector.size
+< pub ()I som/Vector.size (17893ns)
+< pub (D)Lsom/Vector; cd/Simulator.simulate (31663294ns)
+> pub (Lsom/Vector;)Lsom/Vector; cd/CollisionDetector.handleNewFrame
+> pub/con ()V som/Vector.<init>
+> pub/con (I)V som/Vector.<init>
+< pub/con (I)V som/Vector.<init> (19991ns)
+< pub/con ()V som/Vector.<init> (91977ns)
+> pub/con ()V cd/RedBlackTree.<init>
+< pub/con ()V cd/RedBlackTree.<init> (41088ns)
+> pri/sta (Lcd/CollisionDetector;Lcd/RedBlackTree;Lsom/Vector;)Lsom/ForEachInterface; cd/CollisionDetector$$Lambda$1.get$Lambda
+> pri/con (Lcd/CollisionDetector;Lcd/RedBlackTree;Lsom/Vector;)V cd/CollisionDetector$$Lambda$1.<init>
+< pri/con (Lcd/CollisionDetector;Lcd/RedBlackTree;Lsom/Vector;)V cd/CollisionDetector$$Lambda$1.<init> (50273ns)
+< pri/sta (Lcd/CollisionDetector;Lcd/RedBlackTree;Lsom/Vector;)Lsom/ForEachInterface; cd/CollisionDetector$$Lambda$1.get$Lambda (888410ns)
+> pub (Lsom/ForEachInterface;)V som/Vector.forEach
+> pub (Ljava/lang/Object;)V cd/CollisionDetector$$Lambda$1.apply
+> pri (Lcd/RedBlackTree;Lsom/Vector;Lcd/Aircraft;)V cd/CollisionDetector.lambda$handleNewFrame$0
+> pub (Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; cd/RedBlackTree.put
+> pri (Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; cd/RedBlackTree.treeInsert
+> con (Ljava/lang/Object;Ljava/lang/Object;)V cd/RedBlackTree$Node.<init>
+> sta ()V cd/RedBlackTree$Color.<clinit>
+> pri/con (Ljava/lang/String;I)V cd/RedBlackTree$Color.<init>
+< pri/con (Ljava/lang/String;I)V cd/RedBlackTree$Color.<init> (32363ns)
+> pri/con (Ljava/lang/String;I)V cd/RedBlackTree$Color.<init>
+< pri/con (Ljava/lang/String;I)V cd/RedBlackTree$Color.<init> (24151ns)
+< sta ()V cd/RedBlackTree$Color.<clinit> (793349ns)
+< con (Ljava/lang/Object;Ljava/lang/Object;)V cd/RedBlackTree$Node.<init> (41432107ns)
+> sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Node;)Lcd/RedBlackTree$Node; cd/RedBlackTree$Node.access$202
+< sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Node;)Lcd/RedBlackTree$Node; cd/RedBlackTree$Node.access$202 (22849ns)
+> con (ZLcd/RedBlackTree$Node;Ljava/lang/Object;)V cd/RedBlackTree$InsertResult.<init>
+< con (ZLcd/RedBlackTree$Node;Ljava/lang/Object;)V cd/RedBlackTree$InsertResult.<init> (93581ns)
+< pri (Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; cd/RedBlackTree.treeInsert (83163959ns)
+> sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Color;)Lcd/RedBlackTree$Color; cd/RedBlackTree$Node.access$302
+< sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Color;)Lcd/RedBlackTree$Color; cd/RedBlackTree$Node.access$302 (117045ns)
+< pub (Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; cd/RedBlackTree.put (83801842ns)
+> pub (Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; cd/RedBlackTree.put
+> pri (Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; cd/RedBlackTree.treeInsert
+> con (Ljava/lang/Object;Ljava/lang/Object;)V cd/RedBlackTree$Node.<init>
+< con (Ljava/lang/Object;Ljava/lang/Object;)V cd/RedBlackTree$Node.<init> (19164ns)
+> sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Node;)Lcd/RedBlackTree$Node; cd/RedBlackTree$Node.access$202
+< sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Node;)Lcd/RedBlackTree$Node; cd/RedBlackTree$Node.access$202 (18617ns)
+> con (ZLcd/RedBlackTree$Node;Ljava/lang/Object;)V cd/RedBlackTree$InsertResult.<init>
+< con (ZLcd/RedBlackTree$Node;Ljava/lang/Object;)V cd/RedBlackTree$InsertResult.<init> (18411ns)
+< pri (Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; cd/RedBlackTree.treeInsert (305396ns)
+> sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Color;)Lcd/RedBlackTree$Color; cd/RedBlackTree$Node.access$302
+< sta (Lcd/RedBlackTree$Node;Lcd/RedBlackTree$Color;)Lcd/RedBlackTree$Color; cd/RedBlackTree$Node.access$302 (17033ns)
+< pub (Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; cd/RedBlackTree.put (530322ns)
+> pub/con (Lcd/CallSign;Lcd/Vector3D;Lcd/Vector3D;)V cd/Motion.<init>
+< pub/con (Lcd/CallSign;Lcd/Vector3D;Lcd/Vector3D;)V cd/Motion.<init> (99050ns)
+> pub (Ljava/lang/Object;)V som/Vector.append
+< pub (Ljava/lang/Object;)V som/Vector.append (19679ns)
+< pri (Lcd/RedBlackTree;Lsom/Vector;Lcd/Aircraft;)V cd/CollisionDetector.lambda$handleNewFrame$0 (134199190ns)
+< pub (Ljava/lang/Object;)V cd/CollisionDetector$$Lambda$1.apply (134450223ns)
+> pub (Ljava/lang/Object;)V cd/CollisionDetector$$Lambda$1.apply
+> pri (Lcd/RedBlackTree;Lsom/Vector;Lcd/Aircraft;)V cd/CollisionDetector.lambda$handleNewFrame$0
+> pub (Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; cd/RedBlackTree.put
+> pri (Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; cd/RedBlackTree.treeInsert
+> sta (Lcd/RedBlackTree$Node;)Ljava/lang/Object; cd/RedBlackTree$Node.access$700
+< sta (Lcd/RedBlackTree$Node;)Ljava/lang/Object; cd/RedBlackTree$Node.access$700 (25962ns)
+< pri (Ljava/lang/Comparable;Ljava/lang/Object;)Lcd/RedBlackTree$InsertResult; cd/RedBlackTree.treeInsert (195096ns)
+< pub (Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object; cd/RedBlackTree.put (294232ns)
+< pri (Lcd/RedBlackTree;Lsom/Vector;Lcd/Aircraft;)V cd/CollisionDetector.lambda$handleNewFrame$0 (484202ns)
+< pub (Ljava/lang/Object;)V cd/CollisionDetector$$Lambda$1.apply (1327550ns)
+< pub (Lsom/ForEachInterface;)V som/Vector.forEach (136172671ns)
+< pub (Lsom/Vector;)Lsom/Vector; cd/CollisionDetector.handleNewFrame (574532644ns)
+< pri (I)I CD.benchmark (995556187ns)
+< pub (I)Z CD.innerBenchmarkLoop (995643653ns)
+< pri (LBenchmark;)V Run.measure (995749491ns)
+< pri (LBenchmark;)V Run.doRuns (995862562ns)
+< pub ()V Run.runBenchmark (1011923654ns)
+< pub/sta ([Ljava/lang/String;)V Harness.main (1147570799ns)
