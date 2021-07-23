@@ -1,46 +1,10 @@
-Run.getSuiteFromName
-none
-Run.<init>
-none
-Run.setNumIterations
-none
-Harness.processArguments
-none
-Benchmark.<init>
-none
-Storage.<init>
-none
-som/Random.<init>
-none
-Storage$$Lambda$1.<init>
-none
-Storage$$Lambda$1.get$Lambda
-none
 som/Random.next
 IMUL IADD 
 Storage.buildTreeDepth
 IADD IADD 
 Storage.lambda$buildTreeDepth$0
 ISUB 
-Storage$$Lambda$1.apply
-none
-Storage.benchmark
-none
-Storage.verifyResult
-none
-Benchmark.innerBenchmarkLoop
-none
-Run.printResult
-none
 Run.measure
 LSUB LDIV LADD 
-Run.doRuns
-none
 Run.reportBenchmark
 LDIV 
-Run.runBenchmark
-none
-Run.printTotal
-none
-Harness.main
-none

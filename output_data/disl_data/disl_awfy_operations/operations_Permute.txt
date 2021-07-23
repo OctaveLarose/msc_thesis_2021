@@ -1,36 +1,6 @@
-Run.getSuiteFromName
-none
-Run.<init>
-none
-Run.setNumIterations
-none
-Harness.processArguments
-none
-Benchmark.<init>
-none
-Permute.<init>
-none
 Permute.permute
 IADD ISUB 
-Permute.swap
-none
-Permute.benchmark
-none
-Permute.verifyResult
-none
-Benchmark.innerBenchmarkLoop
-none
-Run.printResult
-none
 Run.measure
 LSUB LDIV LADD 
-Run.doRuns
-none
 Run.reportBenchmark
 LDIV 
-Run.runBenchmark
-none
-Run.printTotal
-none
-Harness.main
-none

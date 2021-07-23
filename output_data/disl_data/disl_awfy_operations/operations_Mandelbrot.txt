@@ -1,32 +1,6 @@
-Run.getSuiteFromName
-none
-Run.<init>
-none
-Run.setNumIterations
-none
-Harness.processArguments
-none
-Benchmark.<init>
-none
-Mandelbrot.<init>
-none
 Mandelbrot.mandelbrot
 DMUL DDIV DSUB DMUL DDIV DSUB DSUB DADD DMUL DMUL DADD DMUL DMUL DADD IADD ISUB ISUB 
-Mandelbrot.verifyResult
-none
-Mandelbrot.innerBenchmarkLoop
-none
-Run.printResult
-none
 Run.measure
 LSUB LDIV LADD 
-Run.doRuns
-none
 Run.reportBenchmark
 LDIV 
-Run.runBenchmark
-none
-Run.printTotal
-none
-Harness.main
-none
