@@ -3,8 +3,8 @@ import subprocess
 import sys
 
 
-CODEBASES_DIR = "../data/java_codebases"
-OUTPUT_DATA_DIR = "../data/ck_data"
+CODEBASES_DIR = "../input_data/java_codebases"
+OUTPUT_DATA_DIR = "../input_data/ck_data"
 CK_JAR_PATH = "./ck-0.6.3-with-deps.jar"
 OUTPUT_CSV_FILE_NAMES = ["class", "method", "field", "variable"]
 

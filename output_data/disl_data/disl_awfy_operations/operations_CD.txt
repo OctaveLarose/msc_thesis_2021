@@ -7,16 +7,4 @@ DMUL IMUL DADD IADD DMUL IMUL DADD
 CD.benchmark
 DDIV IADD 
 Run.measure
-LSUB LDIV LADD 
-Exception in thread "main" java.lang.NullPointerException
-	at cd.RedBlackTree.treeInsert(Unknown Source)
-	at cd.RedBlackTree.put(Unknown Source)
-	at cd.CollisionDetector.lambda$handleNewFrame$0(Unknown Source)
-	at som.Vector.forEach(Unknown Source)
-	at cd.CollisionDetector.handleNewFrame(Unknown Source)
-	at CD.benchmark(Unknown Source)
-	at CD.innerBenchmarkLoop(Unknown Source)
-	at Run.measure(Unknown Source)
-	at Run.doRuns(Unknown Source)
-	at Run.runBenchmark(Unknown Source)
-	at Harness.main(Unknown Source)
+LSUB LDIV LADD
