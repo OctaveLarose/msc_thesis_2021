@@ -120,10 +120,14 @@ def export_csvs():
     csv_cs.export()
 
 
+
+
+
 def main():
     # generate_mega_class_csv()
     # export_graphs()
     # export_csvs()
+    mess_around_for_thesis_data()
     # mass_export_graphs()
 
 
