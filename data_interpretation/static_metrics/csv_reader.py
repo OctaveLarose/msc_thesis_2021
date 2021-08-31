@@ -13,7 +13,7 @@ from data_interpretation.static_metrics.graph_generators.variable_related.Usages
 
 
 def generate_mega_class_csv():
-    class_csv_path = "../data/ck_data/class/"
+    class_csv_path = "../../input_data/ck_data/class/"
     csv_filenames = os.listdir(class_csv_path)
 
     df = None
@@ -91,7 +91,7 @@ def export_graphs():
     # generate_mega_class_csv()
     class_df = pd.read_csv("mega_class.csv")
     field_df = pd.read_csv("../../input_data/benchmarks_stefan_metrics/field.csv")
-    var_df = pd.read_csv("../../input_data/benchmarks_stefan_metrics/variable.csv")
+    # var_df = pd.read_csv("../../input_data/benchmarks_stefan_metrics/variable.csv")
 
     # graph_cls = MethodsPerClassGraphGen()
     graph_cls = UsagesPerVariableGraphGen()
@@ -122,7 +122,7 @@ def export_csvs():
 
 def main():
     # generate_mega_class_csv()
-    export_graphs()
+    # export_graphs()
     # export_csvs()
     # mass_export_graphs()
 
