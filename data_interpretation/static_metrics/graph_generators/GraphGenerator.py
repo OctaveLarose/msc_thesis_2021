@@ -24,7 +24,7 @@ class GraphGenerator(ABC):
             os.makedirs(OUTPUT_GRAPH_DIR)
 
         cur_timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
-        plt.savefig(os.path.join(OUTPUT_GRAPH_DIR, self.name + cur_timestamp + ".png"))
+        plt.savefig(os.path.join(".", self.name + cur_timestamp + ".png"))
 
     # TODO: would be nice if we checked if element_type is in the possible_arguments field
     @abstractmethod

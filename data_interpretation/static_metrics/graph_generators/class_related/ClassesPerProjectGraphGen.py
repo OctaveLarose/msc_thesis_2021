@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.ticker import PercentFormatter
 
 from data_interpretation.static_metrics.graph_generators.GraphGenerator import GraphGenerator
 
@@ -29,7 +30,7 @@ class ClassesPerProjectGraphGen(GraphGenerator):
         for idx, project_name in enumerate(classes_df["projectName"]):
             classes_df.at[idx, "classesNbr"] = len(df[df["project_name"] == project_name])
 
-        CLASS_PER_PROJECT_CAP = 3000
+        CLASS_PER_PROJECT_CAP = 7500
 
         # Seaborn version, has a nice theme
         # classes_df = classes_df.loc[classes_df["classesNbr"] <= CLASS_PER_PROJECT_CAP]
@@ -41,33 +42,41 @@ class ClassesPerProjectGraphGen(GraphGenerator):
         # plt.show()
         # plt.savefig("classes_per_project.png")
 
-        fig, (ax1, ax2) = plt.subplots(1, 2, gridspec_kw={"hspace": 5})
-
         # plt.subplots_adjust(left=None, bottom=None, right=None, top=None, wspace=0.3, hspace=None)
 
         # sub_df = df.loc[df["totalMethodsQty"] <= METHOD_GRAPH_CAP]
         # Config for both axes
-        ax1.set_ylabel('Number of projects')
-        if class_type == "any":
-            x_label = 'Number of classes (all types)'
-        elif class_type == "class":
-            x_label = 'Number of classes (no interfaces, etc.)'
-        else:
-            x_label = 'Number of ' + class_type + ' classes'
-
-        for ax in [ax1, ax2]:
-            ax.set_xlabel(x_label)
-            ax.margins(x=0)
+        # ax1.set_ylabel('Number of projects')
+        # if class_type == "any":
+        #     x_label = 'Number of classes (all types)'
+        # elif class_type == "class":
+        #     x_label = 'Number of classes (no interfaces, etc.)'
+        # else:
+        #     x_label = 'Number of ' + class_type + ' classes'
+        #
+        # for ax in [ax1, ax2]:
+        #     ax.set_xlabel(x_label)
+        #     ax.margins(x=0)
 
         # Ax 1 config
-        bins = np.arange(-0.5, CLASS_PER_PROJECT_CAP + 1, 100)
-        ax1.hist(classes_df["classesNbr"], bins=bins)
-        ax1.set_xlim(right=CLASS_PER_PROJECT_CAP)
+        bins = np.arange(-0.5, CLASS_PER_PROJECT_CAP + 1, 300)
+        # ax1.hist(classes_df["classesNbr"])#, bins=bins)
+        # ax1.set_xlim(right=CLASS_PER_PROJECT_CAP)
+
+        plt.grid(True)
+        plt.xlabel("Number of classes (all types)")
+        plt.ylabel("Number of projects")
+        plt.gca().yaxis.set_major_formatter(PercentFormatter(1))
+        plt.hist(classes_df["classesNbr"], weights=np.ones(len(classes_df["classesNbr"])) / len(classes_df["classesNbr"]))
 
         # Ax 2 config
-        max_len = classes_df["classesNbr"].max()
-        bins = np.arange(0, max_len + 1, 100)
-        ax2.hist(classes_df["classesNbr"], bins=bins)
-        ax2.set_yscale('log')
-        ax2.set_xlim([0, max_len])
+        # max_len = classes_df["classesNbr"].max()
+        # bins = np.arange(0, max_len + 1, 100)
+        # ax2.hist(classes_df["classesNbr"], bins=bins)
+        # ax2.set_yscale('log')
+        # ax2.set_xlim([0, max_len])
         # ax2.set_ylim(top=100)
+
+        for idx, row in classes_df.iterrows():
+            if row["classesNbr"] > 7000:
+                print(row["projectName"], row["classesNbr"])
